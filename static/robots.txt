@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+sitemap: https://portfolio-cara.netlify.com/sitemap.xml
