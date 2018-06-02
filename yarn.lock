@@ -2548,7 +2548,7 @@ core-js@^1.0.0:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-1.2.7.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
 
-core-js@^2.4.0, core-js@^2.5.0, core-js@^2.5.1, core-js@^2.5.3, core-js@^2.5.6:
+core-js@^2.4.0, core-js@^2.5.0, core-js@^2.5.3, core-js@^2.5.6:
   version "2.5.7"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.7.tgz#f972608ff0cead68b841a16a932d0b183791814e"
 
@@ -4069,51 +4069,41 @@ gatsby-plugin-emotion@^1.1.17:
   dependencies:
     babel-runtime "^6.26.0"
 
-gatsby-plugin-manifest@^1.0.24:
-  version "1.0.24"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-1.0.24.tgz#714f97dd361ddf7ec6c5ef00b8accc70d3a22ba0"
+gatsby-plugin-manifest@next:
+  version "2.0.1-17"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.0.1-17.tgz#cbe641c4d494462aaa78516e8f6210896b00094a"
   dependencies:
-    babel-runtime "^6.26.0"
+    "@babel/runtime" "7.0.0-beta.47"
     bluebird "^3.5.0"
-    sharp "^0.20.1"
+    sharp "^0.20.2"
 
-gatsby-plugin-netlify@^1.0.21:
-  version "1.0.21"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-1.0.21.tgz#a4cd6631e2c73d73177f1ce8532f125601c8c426"
+gatsby-plugin-netlify@next:
+  version "1.0.19-11"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-netlify/-/gatsby-plugin-netlify-1.0.19-11.tgz#4b956d228cfd3f21b70fe8258e65a12902fe95f3"
   dependencies:
-    babel-runtime "^6.26.0"
+    "@babel/runtime" "7.0.0-beta.47"
     fs-extra "^4.0.2"
     lodash "^4.17.4"
     webpack-assets-manifest "^1.0.0"
 
-gatsby-plugin-offline@^1.0.18:
-  version "1.0.18"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-1.0.18.tgz#2ee2a24d2f69fcc43a015132f07141b69295318d"
+gatsby-plugin-offline@next:
+  version "2.0.0-alpha.15"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-2.0.0-alpha.15.tgz#02e7509bb1db17332daed826ce9d5e1f327796ed"
   dependencies:
-    babel-runtime "^6.26.0"
+    "@babel/runtime" "7.0.0-beta.47"
     sw-precache "^5.0.0"
 
-gatsby-plugin-react-helmet@^2.0.11:
-  version "2.0.11"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-2.0.11.tgz#a2db81755f5b41d54e0e535ca1d9a008d3ccff0a"
+gatsby-plugin-react-helmet@next:
+  version "2.0.12-7"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-2.0.12-7.tgz#6835a83fc6f28a123c0503bc823ddf2bb52c4d0b"
   dependencies:
-    babel-runtime "^6.26.0"
+    "@babel/runtime" "7.0.0-beta.47"
 
-gatsby-plugin-react-next@^1.0.11:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-next/-/gatsby-plugin-react-next-1.0.11.tgz#715cab5ea86f64664f96af3e7f3640eecd9de5e3"
+gatsby-plugin-sitemap@next:
+  version "1.2.14-10"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sitemap/-/gatsby-plugin-sitemap-1.2.14-10.tgz#0f3ff5e34c09da4fc360937250839aa089a57225"
   dependencies:
-    babel-runtime "^6.26.0"
-    core-js "^2.5.1"
-    react "^16.0.0"
-    react-dom "^16.0.0"
-
-gatsby-plugin-sitemap@^1.2.25:
-  version "1.2.25"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sitemap/-/gatsby-plugin-sitemap-1.2.25.tgz#175c82518316f9439df66343d213be2815e129b0"
-  dependencies:
-    babel-runtime "^6.26.0"
-    minimatch "^3.0.4"
+    "@babel/runtime" "7.0.0-beta.47"
     sitemap "^1.12.0"
 
 gatsby-react-router-scroll@^1.0.12-10:
@@ -7128,7 +7118,7 @@ react-dev-utils@^4.2.1:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
-react-dom@^16.0.0, react-dom@^16.4.0:
+react-dom@^16.4.0:
   version "16.4.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.4.0.tgz#099f067dd5827ce36a29eaf9a6cdc7cbf6216b1e"
   dependencies:
@@ -7208,7 +7198,7 @@ react-spring@^5.3.8:
   dependencies:
     "@babel/runtime" "7.0.0-beta.49"
 
-react@^16.0.0, react@^16.4.0:
+react@^16.4.0:
   version "16.4.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.4.0.tgz#402c2db83335336fba1962c08b98c6272617d585"
   dependencies:
@@ -7874,7 +7864,7 @@ shallowequal@^1.0.1, shallowequal@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/shallowequal/-/shallowequal-1.0.2.tgz#1561dbdefb8c01408100319085764da3fcf83f8f"
 
-sharp@^0.20.1:
+sharp@^0.20.2:
   version "0.20.3"
   resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.20.3.tgz#315cbd44c36a0c403433a5d7b50bcbdf81b0ede0"
   dependencies:
