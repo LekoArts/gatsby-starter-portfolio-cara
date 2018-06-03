@@ -50,8 +50,8 @@ const colors = {
   'blue-grey': '#23262b',
 
   black: '#222b2f',
-  'grey-darkest': '#364349',
-  'grey-darker': '#596a73',
+  'grey-darkest': '#273238',
+  'grey-darker': '#364349',
   'grey-dark': '#70818a',
   grey: '#9babb4',
   'grey-light': '#dae4e9',
