@@ -12,7 +12,6 @@ const ProjectCard = () => (
     <div>Bild</div>
     <div>
       <h2>Titel</h2>
-      <p>Beschreibung</p>
     </div>
   </Wrapper>
 );
