@@ -172,6 +172,7 @@ module.exports = {
     md: '600px',
     lg: '900px',
     xl: '1200px',
+    xxl: '1600px',
   },
 
   /*
@@ -252,6 +253,8 @@ module.exports = {
     '3xl': '1.875rem', // 30px
     '4xl': '2.25rem', // 36px
     '5xl': '3rem', // 48px
+    '6xl': '5rem',
+    '7xl': '8rem',
   },
 
   /*
@@ -607,6 +610,10 @@ module.exports = {
     '4': '1rem',
     '6': '1.5rem',
     '8': '2rem',
+    '12': '3rem',
+    '16': '4rem',
+    '24': '6rem',
+    '32': '8rem',
   },
 
   /*

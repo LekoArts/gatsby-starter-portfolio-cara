@@ -10,6 +10,7 @@ import 'typeface-open-sans';
 import SEO from '../components/SEO';
 import SVG from '../components/SVG';
 import { colors, width } from '../../tailwind';
+import triangle from '../utils/triangle.svg';
 
 injectGlobal`
   *, *:before, *:after {
@@ -51,15 +52,43 @@ const DividerMiddle = styled(Divider)`
 `;
 
 const Content = styled(ParallaxLayer)`
-  ${tw('justify-center items-center flex p-8')};
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    ${tw('font-serif text-white')};
+  ${tw('p-24 justify-center items-center flex z-50')};
+`;
+
+const Inner = styled.div`
+  ${tw('w-full xl:w-2/3')};
+`;
+
+const BigTitle = styled.h1`
+  ${tw('text-6xl font-serif text-white mb-6 tracking-wide')};
+`;
+
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
   }
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
+const Title = styled.h1`
+  ${tw('text-5xl font-serif text-white mb-6 tracking-wide relative')};
+  &:before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: url(${triangle});
+    position: absolute;
+    background-size: 40px;
+    animation: ${rotate} 4s linear infinite;
+    left: -60px;
+    top: 12px;
+  }
+`;
+
+const Subtitle = styled.p`
+  ${tw('text-4xl font-sans text-white mt-8 xxl:w-4/5')};
 `;
 
 const WaveWrapper = styled.div`
@@ -74,7 +103,7 @@ const InnerWave = styled.div`
   height: 100%;
   svg {
     width: 100%;
-    height: 30vh;
+    height: 40vh;
   }
 `;
 
@@ -126,7 +155,7 @@ const Index = () => (
   <React.Fragment>
     <SEO />
     <Page>
-      <Parallax pages={4}>
+      <Parallax pages={5}>
         <Divider speed={0.2} offset={0}>
           <UpDown>
             <SVG icon="triangle" width={width['48']} stroke={colors.orange} left="10%" top="20%" />
@@ -155,16 +184,30 @@ const Index = () => (
           <SVG icon="hexa" width={width['8']} stroke={colors['grey-darker']} left="80%" top="70%" />
         </Divider>
         <Content speed={0.4} offset={0}>
-          <h1>Slide 1 - This is a long heading Slide 1 - This is a long heading</h1>
+          <Inner>
+            <BigTitle>
+              Hello, <br /> I'm John Doe.
+            </BigTitle>
+            <Subtitle>
+              I'm creating noice web experiences for the next generation of consumer-facing companies.
+            </Subtitle>
+          </Inner>
         </Content>
-        <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={1} />
-        <DividerMiddle bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)" speed={-0.2} offset={1} />
-        <Content speed={0.4} offset={1}>
-          <h1>Slide 2 - This is a long heading Slide 2 - This is a long heading</h1>
+        <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={1} factor={2} />
+        <DividerMiddle
+          bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
+          speed={-0.2}
+          offset={1}
+          factor={2}
+        />
+        <Content speed={0.4} offset={1} factor={2}>
+          <Inner>
+            <Title>Projects</Title>
+          </Inner>
         </Content>
-        <Divider speed={0.1} offset={1}>
+        <Divider speed={0.1} offset={1} factor={2}>
           <UpDown>
-            <SVG icon="box" width={width['6']} fill={colors['grey-darkest']} left="50%" top="75%" />
+            <SVG icon="box" width={width['6']} fill={colors['grey-darker']} left="50%" top="75%" />
             <SVG icon="upDown" width={width['8']} fill={colors['grey-darkest']} left="70%" top="20%" />
             <SVG icon="triangle" width={width['8']} stroke={colors['grey-darkest']} left="25%" top="5%" />
             <SVG icon="circle" width={width['24']} fill={colors['grey-darkest']} left="10%" top="60%" />
@@ -184,8 +227,8 @@ const Index = () => (
           <SVG icon="hexa" width={width['16']} stroke={colors['grey-darkest']} left="5%" top="50%" />
           <SVG icon="hexa" width={width['8']} stroke={colors['grey-darkest']} left="80%" top="70%" />
         </Divider>
-        <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={2} />
-        <Divider speed={0.1} offset={2}>
+        <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={3} />
+        <Divider speed={0.1} offset={3}>
           <UpDown>
             <SVG icon="box" width={width['6']} fill={colors.blue} left="50%" top="75%" />
             <SVG icon="upDown" width={width['8']} fill={colors['grey-darkest']} left="70%" top="20%" />
@@ -204,10 +247,10 @@ const Index = () => (
           <SVG icon="box" width={width['12']} fill={colors['grey-darkest']} left="20%" top="30%" />
           <SVG icon="hexa" width={width['8']} stroke={colors['grey-darkest']} left="80%" top="70%" />
         </Divider>
-        <Content speed={0.4} offset={2}>
+        <Content speed={0.4} offset={3}>
           <h1>Slide 3 - This is a long heading Slide 3 - This is a long heading</h1>
         </Content>
-        <Divider fill="#23262b" speed={0.2} offset={3}>
+        <Divider fill="#23262b" speed={0.2} offset={4}>
           <WaveWrapper>
             <InnerWave>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 338.05" preserveAspectRatio="none">
@@ -223,10 +266,10 @@ const Index = () => (
             </InnerWave>
           </WaveWrapper>
         </Divider>
-        <Content speed={0.4} offset={3}>
+        <Content speed={0.4} offset={4}>
           <h1>Slide 4 - This is a long heading Slide 4 - This is a long heading</h1>
         </Content>
-        <Divider speed={0.1} offset={3}>
+        <Divider speed={0.1} offset={4}>
           <UpDown>
             <SVG icon="upDown" width={width['8']} fill={colors['grey-darkest']} left="70%" top="20%" />
             <SVG icon="triangle" width={width['8']} stroke={colors['grey-darkest']} left="25%" top="5%" />
