@@ -8,10 +8,10 @@ A portfolio starter for [Gatsby](https://www.gatsbyjs.org/). The target audience
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LeKoArts/gatsby-starter-portfolio-cara)
 
-- TailwindCSS
+- TailwindCSS & Emotion
 - Gatsby v2
-- Emotion
 - React Spring
+- Playful One-Page website with Parallax effect
 
 Based on [gatsby-tailwind-demo](https://github.com/jlengstorf/gatsby-tailwind-demo).
 
@@ -28,7 +28,21 @@ Also check out the other *gatsby-starter-portfolio*:
 
 ## Features
 
-- TODO
+- [React Spring](https://github.com/drcmda/react-spring) (Used for Parallax effect)
+- [TailwindCSS](https://tailwindcss.com/) & [Emotion](https://emotion.sh/) for styling
+    - Use the full power of TailwindCSS while generating small styles (as unused data gets deleted)
+- SEO
+    - Schema.org JSONLD
+    - OpenGraph Tags
+    - Twitter Tags
+- Offline Support
+- WebApp Manifest Support
+- Responsive images
+    - The right image size for every screen size
+    - Traced SVG Loading (Lazy-Loading)
+    - WebP Support
+
+Please note that Gatsby **v2** is currently in Alpha and it will still take some time until it's officially released. Therefore you'd should expect some bugs.
 
 ## Getting Started
 
@@ -59,6 +73,31 @@ Per default Netlify sets it to `gatsby build` but you have to use `yarn run buil
 
 ## Configuration
 
+You have two options to configure this project.
 
+1) Use the `config/website.js` to configure data passed to the SEO component and other parts of the Gatsby site:
+
+```JS
+module.exports = {
+  pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "/portfolio"
+
+  siteTitle: 'Cara - Gatsby Starter Portfolio', // Navigation and Site Title
+  siteTitleAlt: 'Cara', // Alternative Site title for SEO
+  siteUrl: 'https://portfolio-cara.netlify.com', // Domain of your site. No trailing slash!
+  siteLanguage: 'en', // Language Tag on <html> element
+  siteLogo: '/logos/logo-1024.png', // Used for SEO and manifest
+  siteDescription: 'TODO',
+
+  siteFBAppID: '123456789', // Facebook App ID
+  userTwitter: '@cara', // Twitter Username
+  ogSiteName: 'cara', // Facebook Site Name
+
+  // Manifest and Progress color
+  themeColor: tailwind.colors.orange,
+  backgroundColor: tailwind.colors.blue,
+};
+```
+
+2) Use the `tailwind.js` file to configure TailwindCSS. Their [documentation](https://tailwindcss.com/docs/configuration) explain it step-by-setp.
 
 **Attention:** You also need to edit ``static/robots.txt`` to include your domain!
