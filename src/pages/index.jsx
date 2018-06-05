@@ -51,7 +51,7 @@ const DividerMiddle = styled(Divider)`
 `;
 
 const Content = styled(ParallaxLayer)`
-  ${tw('p-12 lg:p-24 justify-center items-center flex z-50')};
+  ${tw('p-6 md:p-12 lg:p-24 justify-center items-center flex z-50')};
 `;
 
 const Hero = styled.div`
@@ -232,7 +232,7 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
         offset={1}
         factor={2}
       />
-      <Content speed={0.4} offset={1.25} factor={2}>
+      <Content speed={0.4} offset={1.2} factor={2}>
         <Inner>
           <Title>Projects</Title>
           <ProjectsWrapper>
@@ -271,7 +271,7 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
           <SVG icon="circle" className={hidden} width={width['24']} fill={colors.white} left="17%" top="60%" />
         </UpDown>
         <UpDownWide>
-          <SVG icon="arrowUp" width={width['16']} fill={colors.green} left="20%" top="90%" />
+          <SVG icon="arrowUp" className={hidden} width={width['16']} fill={colors.green} left="20%" top="90%" />
           <SVG icon="triangle" width={width['12']} stroke={colors.white} left="90%" top="30%" />
           <SVG icon="circle" width={width['16']} fill={colors.yellow} left="70%" top="90%" />
           <SVG icon="triangle" className={hidden} width={width['16']} stroke={colors.teal} left="18%" top="75%" />
@@ -291,7 +291,7 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
           <SVG icon="box" className={hidden} width={width['6']} fill={colors.blue} left="50%" top="75%" />
           <SVG icon="upDown" className={hidden} width={width['8']} fill={colors['grey-darkest']} left="70%" top="20%" />
           <SVG icon="triangle" width={width['8']} stroke={colors['grey-darkest']} left="25%" top="5%" />
-          <SVG icon="upDown" width={width['24']} fill={colors.orange} left="80%" top="80%" />
+          <SVG icon="upDown" className={hidden} width={width['24']} fill={colors.orange} left="80%" top="80%" />
         </UpDown>
         <UpDownWide>
           <SVG icon="arrowUp" className={hidden} width={width['16']} fill={colors.purple} left="5%" top="80%" />
