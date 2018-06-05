@@ -54,7 +54,7 @@ To copy and install this starter run this command (with "project-name" being the
 
 ```
 gatsby new project-name https://github.com/LeKoArts/gatsby-starter-portfolio-bella
-npm run dev
+npm run develop
 ```
 
 ### Adding new features/plugins
@@ -99,5 +99,3 @@ module.exports = {
 ```
 
 2) Use the `tailwind.js` file to configure TailwindCSS. Their [documentation](https://tailwindcss.com/docs/configuration) explain it step-by-setp.
-
-**Attention:** You also need to edit ``static/robots.txt`` to include your domain!

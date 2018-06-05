@@ -36,11 +36,14 @@ const Wrapper = styled.a`
 
 const Image = styled.div`
   ${tw('overflow-hidden')};
+  @media (max-width: 1200px) {
+    height: 30vw;
+  }
 `;
 
 const Title = styled.div`
   ${tw(
-    'text-white uppercase text-lg xl:text-xl tracking-wide px-6 py-4 font-sans absolute whitespace-no-wrap shadow-md'
+    'text-white uppercase text-md md:text-lg xl:text-xl tracking-wide px-4 py-2 lg:px-6 lg:py-4 font-sans absolute whitespace-no-wrap shadow-md'
   )};
   bottom: -20px;
   right: -20px;
