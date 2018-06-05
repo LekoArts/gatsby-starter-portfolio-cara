@@ -71,7 +71,7 @@ const colors = {
   'orange-darker': '#7f4012',
   'orange-dark': '#c1611f',
   orange: '#e07628',
-  'orange-light': '#faad63',
+  'orange-light': '#ffa31b',
   'orange-lighter': '#fcd9b6',
   'orange-lightest': '#fff5eb',
 

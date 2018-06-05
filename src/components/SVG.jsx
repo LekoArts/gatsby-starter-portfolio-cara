@@ -66,8 +66,8 @@ const icons = {
   },
 };
 
-const Triangle = ({ stroke, fill, width, icon, left, top }) => (
-  <SVG viewBox={icons[icon].viewBox} stroke={stroke} fill={fill} width={width} left={left} top={top}>
+const Triangle = ({ stroke, fill, width, icon, left, top, className }) => (
+  <SVG viewBox={icons[icon].viewBox} stroke={stroke} fill={fill} width={width} left={left} top={top} className={className}>
     {icons[icon].shape}
   </SVG>
 );
@@ -81,6 +81,7 @@ Triangle.propTypes = {
   icon: PropTypes.string.isRequired,
   left: PropTypes.string,
   top: PropTypes.string,
+  className: PropTypes.string,
 };
 
 Triangle.defaultProps = {
@@ -89,4 +90,5 @@ Triangle.defaultProps = {
   fill: 'none',
   left: '0%',
   top: '0%',
+  className: 'fancy-icon',
 };
