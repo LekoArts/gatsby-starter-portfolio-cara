@@ -1,9 +1,7 @@
-/* eslint no-unused-expressions: 0 */
 /* global tw */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { injectGlobal } from 'emotion';
-import styled, { keyframes, css } from 'react-emotion';
+import styled from 'react-emotion';
 import { Parallax, ParallaxLayer } from 'react-spring';
 import 'typeface-cantata-one';
 import 'typeface-open-sans';
@@ -11,31 +9,12 @@ import 'typeface-open-sans';
 import SEO from '../components/SEO';
 import SVG from '../components/SVG';
 import ProjectCard from '../components/ProjectCard';
+import { rotate, UpDown, UpDownWide, waveAnimation } from '../styles/animations';
+import { hidden } from '../styles/utils';
 import { colors, width } from '../../tailwind';
-import triangle from '../utils/triangle.svg';
+import triangle from '../images/triangle.svg';
 import avatar from '../images/avatar.jpg';
-
-injectGlobal`
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  html {
-    text-rendering: optimizeLegibility;
-    overflow-x: hidden;
-    box-sizing: border-box;
-    -ms-overflow-style: scrollbar;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    background-color: #161719;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-`;
+import '../styles/global';
 
 const Divider = styled(ParallaxLayer)`
   ${tw('absolute w-full h-full')};
@@ -65,15 +44,6 @@ const Inner = styled.div`
 const BigTitle = styled.h1`
   ${tw('text-5xl lg:text-6xl font-serif text-white mb-6 tracking-wide')};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
-`;
-
-const rotate = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 `;
 
 const Title = styled.h1`
@@ -112,54 +82,6 @@ const InnerWave = styled.div`
     width: 100%;
     height: 40vh;
   }
-`;
-
-const waveOne = keyframes`
-  0% {
-    d: path("M 0 100 Q 250 50 400 200 Q 550 350 800 300 L 800 0 L 0 0 L 0 100 Z");
-  }
-  50% {
-    d: path("M 0 100 Q 200 150 400 200 Q 600 250 800 300 L 800 0 L 0 0 L 0 100 Z");
-  }
-  100% {
-    d: path("M 0 100 Q 150 350 400 200 Q 650 50 800 300 L 800 0 L 0 0 L 0 100 Z");
-  }
-`;
-
-const upDownAnimation = keyframes`
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(30px);
-  }
-`;
-
-const upDownWideAnimation = keyframes`
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(200px);
-  }
-`;
-
-const UpDown = styled.div`
-  animation: ${upDownAnimation} 4s ease-in-out infinite alternate;
-  ${tw('pin absolute')};
-`;
-
-const UpDownWide = styled.div`
-  animation: ${upDownWideAnimation} 18s ease-in-out infinite alternate;
-  ${tw('pin absolute')};
-`;
-
-const waveOneAnimation = css`
-  animation: ${waveOne} 25s linear infinite alternate;
-`;
-
-const hidden = css`
-  ${tw('hidden lg:block')};
 `;
 
 const AboutHero = styled.div`
@@ -328,7 +250,7 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
         <WaveWrapper>
           <InnerWave>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 338.05" preserveAspectRatio="none">
-              <path className={waveOneAnimation}>
+              <path className={waveAnimation}>
                 <animate
                   attributeName="d"
                   values="M 0 100 Q 250 50 400 200 Q 550 350 800 300 L 800 0 L 0 0 L 0 100 Z;M 0 100 Q 200 150 400 200 Q 600 250 800 300 L 800 0 L 0 0 L 0 100 Z;M 0 100 Q 150 350 400 200 Q 650 50 800 300 L 800 0 L 0 0 L 0 100 Z"
@@ -372,7 +294,7 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
 export default Index;
 
 Index.propTypes = {
-  data: PropTypes.any.isRequired,
+  data: PropTypes.object.isRequired,
 };
 
 /* eslint no-undef: "off" */
