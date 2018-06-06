@@ -35,6 +35,7 @@ Also check out the other *gatsby-starter-portfolio*:
     - Schema.org JSONLD
     - OpenGraph Tags
     - Twitter Tags
+- [Typefaces](https://github.com/KyleAMathews/typefaces) for quicker font loading
 - Offline Support
 - WebApp Manifest Support
 - Responsive images
@@ -114,7 +115,18 @@ module.exports = {
 - For `icon` you have the options: `triangle, circle, arrowUp, upDown, box, hexa`
 - If you want the SVG to be hidden on mobile view, add the `className={hidden}`
 - You can define the width via the TailwindCSS width [option](https://tailwindcss.com/docs/width)
-- The colors gets defined via the TailwindCSS color [option](https://tailwindcss.com/docs/colors)
+- The colors get defined via the TailwindCSS color [option](https://tailwindcss.com/docs/colors)
     - Please note that you will either have to define the color in `stroke` **or** `fill` depending on the icon. For referance have a look at the currently used SVGs
 - The options `left` and `top` position the icon relatively to its parent container
 - You can also wrap the SVGs with `<UpDown />` or `<UpDownWide />` to animate them
+
+### Typography
+
+Instead of relying on Google's CDN to host its fonts this site self-hosts the fonts and therefore profits from increased performance. The installed fonts can be found in `src/pages/index.jsx`:
+
+```JSX
+import 'typeface-cantata-one';
+import 'typeface-open-sans';
+```
+
+We use [typefaces](https://github.com/KyleAMathews/typefaces) by Kyle Mathews. Have a look at the repository if you want to install & use other fonts.
