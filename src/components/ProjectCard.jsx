@@ -37,7 +37,7 @@ const Wrapper = styled.a`
 const Image = styled.div`
   ${tw('overflow-hidden')};
   @media (max-width: 1200px) {
-    height: 30vw;
+    height: 32vw;
   }
 `;
 
