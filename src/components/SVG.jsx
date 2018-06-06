@@ -2,8 +2,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
+import { width as twWidth } from '../../tailwind';
 
-const SVG = styled.svg`
+const Wrapper = styled.svg`
   ${tw('stroke-current absolute')};
   color: ${props => props.stroke};
   width: ${props => props.width};
@@ -66,27 +67,35 @@ const icons = {
   },
 };
 
-const Triangle = ({ stroke, fill, width, icon, left, top, className }) => (
-  <SVG viewBox={icons[icon].viewBox} stroke={stroke} fill={fill} width={width} left={left} top={top} className={className}>
+const SVG = ({ stroke, fill, width, icon, left, top, className }) => (
+  <Wrapper
+    viewBox={icons[icon].viewBox}
+    stroke={stroke}
+    fill={fill}
+    width={twWidth[`${width}`]}
+    left={left}
+    top={top}
+    className={className}
+  >
     {icons[icon].shape}
-  </SVG>
+  </Wrapper>
 );
 
-export default Triangle;
+export default SVG;
 
-Triangle.propTypes = {
+SVG.propTypes = {
   stroke: PropTypes.string,
   fill: PropTypes.string,
-  width: PropTypes.string,
-  icon: PropTypes.string.isRequired,
+  width: PropTypes.number,
+  icon: PropTypes.oneOf(['triangle', 'circle', 'arrowUp', 'upDown', 'box', 'hexa']).isRequired,
   left: PropTypes.string,
   top: PropTypes.string,
   className: PropTypes.string,
 };
 
-Triangle.defaultProps = {
+SVG.defaultProps = {
   stroke: 'transparent',
-  width: '8rem',
+  width: 8,
   fill: 'none',
   left: '0%',
   top: '0%',
