@@ -11,7 +11,7 @@ A portfolio starter for [Gatsby](https://www.gatsbyjs.org/). The target audience
 - TailwindCSS & Emotion
 - Gatsby v2
 - React Spring
-- Playful One-Page website with Parallax effect
+- Playful & Colorful One-Page website with Parallax effect
 
 Based on [gatsby-tailwind-demo](https://github.com/jlengstorf/gatsby-tailwind-demo).
 
@@ -42,7 +42,7 @@ Also check out the other *gatsby-starter-portfolio*:
     - Traced SVG Loading (Lazy-Loading)
     - WebP Support
 
-Please note that Gatsby **v2** is currently in Alpha and it will still take some time until it's officially released. Therefore you'd should expect some bugs.
+**Please note:** Gatsby **v2** is currently in Alpha and it will still take some time until it's officially released. Therefore you should expect some bugs. Also the parallax effect can be quite heavy for some older CPUs and the site uses some newer CSS features which will result in incompatibility with older browsers.
 
 ## Getting Started
 
@@ -53,7 +53,7 @@ Check your development environment! You'll need [Node.js](https://nodejs.org/en/
 To copy and install this starter run this command (with "project-name" being the name of your folder you wish to install it in):
 
 ```
-gatsby new project-name https://github.com/LeKoArts/gatsby-starter-portfolio-bella
+gatsby new project-name https://github.com/LeKoArts/gatsby-starter-portfolio-cara
 npm run develop
 ```
 
@@ -73,7 +73,7 @@ Per default Netlify sets it to `gatsby build` but you have to use `yarn run buil
 
 ## Configuration
 
-You have two options to configure this project.
+You have multiple options to configure this project.
 
 1) Use the `config/website.js` to configure data passed to the SEO component and other parts of the Gatsby site:
 
@@ -86,11 +86,12 @@ module.exports = {
   siteUrl: 'https://portfolio-cara.netlify.com', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: '/logos/logo-1024.png', // Used for SEO and manifest
-  siteDescription: 'TODO',
+  siteDescription: 'Playful & Colorful One-Page website with Parallax effect',
 
   siteFBAppID: '123456789', // Facebook App ID
   userTwitter: '@cara', // Twitter Username
   ogSiteName: 'cara', // Facebook Site Name
+  ogLanguage: 'de_DE', // Facebook Language
 
   // Manifest and Progress color
   themeColor: tailwind.colors.orange,
@@ -98,4 +99,22 @@ module.exports = {
 };
 ```
 
-2) Use the `tailwind.js` file to configure TailwindCSS. Their [documentation](https://tailwindcss.com/docs/configuration) explain it step-by-setp.
+2) Use the `tailwind.js` file to configure TailwindCSS. Their [documentation](https://tailwindcss.com/docs/configuration) explains it step-by-setp.
+
+3) Modify the files in the `src/styles` directory.
+
+4) You can also place the icons somewhere else on the page, modify their animation and hide them on smaller screens:
+
+```JSX
+  <SVG icon="triangle" className={hidden} width={48} stroke={colors.orange} left="10%" top="20%" />
+  <SVG icon="hexa" width={48} stroke={colors.red} left="60%" top="70%" />
+  <SVG icon="box" width={6} fill={colors['grey-darker']} left="60%" top="15%" />
+```
+
+- For `icon` you have the options: `triangle, circle, arrowUp, upDown, box, hexa`
+- If you want the SVG to be hidden on mobile view, add the `className={hidden}`
+- You can define the width via the TailwindCSS width [option](https://tailwindcss.com/docs/width)
+- The colors gets defined via the TailwindCSS color [option](https://tailwindcss.com/docs/colors)
+    - Please note that you will either have to define the color in `stroke` **or** `fill` depending on the icon. For referance have a look at the currently used SVGs
+- The options `left` and `top` position the icon relatively to its parent container
+- You can also wrap the SVGs with `<UpDown />` or `<UpDownWide />` to animate them
