@@ -72,6 +72,9 @@ const ProjectsWrapper = styled.div`
   display: grid;
   grid-gap: 4rem;
   grid-template-columns: repeat(2, 1fr);
+  @media (max-width: 1200px) {
+    grid-gap: 3rem;
+  }
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
     grid-gap: 2rem;
@@ -218,7 +221,7 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
         <SVG icon="circle" width={6} fill={colors.white} left="4%" top="20%" />
         <SVG icon="circle" width={12} fill={colors.pink} left="80%" top="60%" />
         <SVG icon="box" width={6} fill={colors.orange} left="10%" top="10%" />
-        <SVG icon="box" width={12} fill={colors.yellow} left="20%" top="30%" />
+        <SVG icon="box" width={12} fill={colors.yellow} left="29%" top="26%" />
         <SVG icon="hexa" width={16} stroke={colors.red} left="75%" top="30%" />
         <SVG icon="hexa" width={8} stroke={colors.yellow} left="80%" top="70%" />
       </Divider>

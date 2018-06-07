@@ -7,7 +7,7 @@ import { width as twWidth } from '../../tailwind';
 const Wrapper = styled.svg`
   ${tw('stroke-current absolute')};
   color: ${props => props.stroke};
-  width: ${props => props.width};
+  width: ${props => props.svgWidth};
   fill: ${props => props.fill};
   left: ${props => props.left};
   top: ${props => props.top};
@@ -72,7 +72,7 @@ const SVG = ({ stroke, fill, width, icon, left, top, className }) => (
     viewBox={icons[icon].viewBox}
     stroke={stroke}
     fill={fill}
-    width={twWidth[`${width}`]}
+    svgWidth={twWidth[`${width}`]}
     left={left}
     top={top}
     className={className}
