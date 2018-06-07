@@ -69,6 +69,13 @@ const Subtitle = styled.p`
 
 const ProjectsWrapper = styled.div`
   ${tw('flex flex-wrap justify-between')};
+  display: grid;
+  grid-gap: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
 `;
 
 const WaveWrapper = styled.div`

@@ -5,10 +5,8 @@ import styled from 'react-emotion';
 import Img from 'gatsby-image';
 
 const Wrapper = styled.a`
-  flex-basis: 100%;
-  max-width: 100%;
   width: 100%;
-  ${tw('sm:mx-2 md:mx-6 lg:mx-0 my-4 xl:my-8 shadow-lg relative no-underline')};
+  ${tw('shadow-lg relative no-underline')};
   img {
     transition: all 0.6s ease-in-out !important;
     filter: grayscale(0);
@@ -20,17 +18,9 @@ const Wrapper = styled.a`
     }
   }
   @media (min-width: 900px) {
-    flex-basis: calc(99.9% * 1 / 2 - 1rem);
-    max-width: calc(99.9% * 1 / 2 - 1rem);
-    width: calc(99.9% * 1 / 2 - 1rem);
     img {
       filter: grayscale(1);
     }
-  }
-  @media (min-width: 1200px) {
-    flex-basis: calc(99.9% * 1 / 2 - 2rem);
-    max-width: calc(99.9% * 1 / 2 - 2rem);
-    width: calc(99.9% * 1 / 2 - 2rem);
   }
 `;
 
