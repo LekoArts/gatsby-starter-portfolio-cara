@@ -2,6 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
+import { graphql } from 'gatsby';
 import { Parallax, ParallaxLayer } from 'react-spring';
 import 'typeface-cantata-one';
 import 'typeface-open-sans';
@@ -319,7 +320,6 @@ Index.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-/* eslint no-undef: "off" */
 export const query = graphql`
   query IndexQuery {
     p1: file(relativePath: { regex: "/project_1.jpg/" }) {
