@@ -26,6 +26,8 @@ Also check out the other *gatsby-starter-portfolio*:
 - [gatsby-starter-portfolio-emilia](https://github.com/LeKoArts/gatsby-starter-portfolio-emilia)
 - [gatsby-starter-portfolio-bella](https://github.com/LeKoArts/gatsby-starter-portfolio-bella)
 
+Check out the [Gatsby Starter Portfolio Overview](https://gatsby-starter-portfolio.netlify.com/)!
+
 ## Features
 
 - [React Spring](https://github.com/drcmda/react-spring) (Used for Parallax effect)
