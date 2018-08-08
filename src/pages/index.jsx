@@ -1,8 +1,6 @@
 /* global tw */
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'react-emotion';
-import { graphql } from 'gatsby';
 import { Parallax, ParallaxLayer } from 'react-spring';
 import 'typeface-cantata-one';
 import 'typeface-open-sans';
@@ -69,7 +67,7 @@ const Subtitle = styled.p`
 `;
 
 const ProjectsWrapper = styled.div`
-  ${tw('flex flex-wrap justify-between')};
+  ${tw('flex flex-wrap justify-between mt-8')};
   display: grid;
   grid-gap: 4rem;
   grid-template-columns: repeat(2, 1fr);
@@ -127,10 +125,10 @@ const Footer = styled.footer`
   }
 `;
 
-const Index = ({ data: { p1, p2, p3, p4 } }) => (
+const Index = () => (
   <React.Fragment>
     <SEO />
-    <Parallax pages={5}>
+    <Parallax pages={4}>
       <Divider speed={0.2} offset={0}>
         <UpDown>
           <SVG icon="triangle" className={hidden} width={48} stroke={colors.orange} left="10%" top="20%" />
@@ -166,45 +164,43 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
           <Subtitle>I'm creating noice web experiences for the next generation of consumer-facing companies.</Subtitle>
         </Hero>
       </Content>
-      <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={1} factor={2} />
-      <DividerMiddle
-        bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
-        speed={-0.2}
-        offset={1}
-        factor={2}
-      />
-      <Content speed={0.4} offset={1.2} factor={2}>
+      <DividerMiddle bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)" speed={-0.2} offset={1.1} />
+      <Content speed={0.4} offset={1}>
         <Inner>
           <Title>Projects</Title>
           <ProjectsWrapper>
             <ProjectCard
-              fluid={p1.childImageSharp.fluid}
-              title="Eagle"
-              alt="Eagle - Animal Composing"
-              link="https://www.behance.net/gallery/38068151/Eagle"
-            />
+              title="Freiheit"
+              link="https://www.behance.net/gallery/58937147/Freiheit"
+              bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+            >
+              This project is my entry to Adobe's #ChallengeYourPerspective contest.
+            </ProjectCard>
             <ProjectCard
-              fluid={p2.childImageSharp.fluid}
-              title="Tomb Raider"
-              alt="Tomb Raider - Wallpaper"
-              link="https://www.behance.net/gallery/43907099/Tomb-Raider"
-            />
-            <ProjectCard
-              fluid={p3.childImageSharp.fluid}
               title="Harry Potter"
-              alt="Harry Potter Fanart"
               link="https://www.behance.net/gallery/52915793/Harry-Potter"
-            />
+              bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
+            >
+              I entered the DOCMA 2017 award with this Harry Potter inspired image.
+            </ProjectCard>
             <ProjectCard
-              fluid={p4.childImageSharp.fluid}
-              title="PROPRIUS"
-              alt="Instagram 366 Day Challenge"
-              link="https://www.behance.net/gallery/61747105/Best-of-PROPRIUS-2016"
-            />
+              title="Tomb Raider"
+              link="https://www.behance.net/gallery/43907099/Tomb-Raider"
+              bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
+            >
+              Recreation of a Tomb Raider Wallpaper (Fan Art)
+            </ProjectCard>
+            <ProjectCard
+              title="Eagle"
+              link="https://www.behance.net/gallery/38068151/Eagle"
+              bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+            >
+              A fantasy image manipulation relocating the habitat of wild animals.
+            </ProjectCard>
           </ProjectsWrapper>
         </Inner>
       </Content>
-      <Divider speed={0.1} offset={1} factor={2}>
+      <Divider speed={0.1} offset={1}>
         <UpDown>
           <SVG icon="box" width={6} fill={colors.white} left="85%" top="75%" />
           <SVG icon="upDown" width={8} fill={colors.teal} left="70%" top="20%" />
@@ -226,8 +222,8 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
         <SVG icon="hexa" width={16} stroke={colors.red} left="75%" top="30%" />
         <SVG icon="hexa" width={8} stroke={colors.yellow} left="80%" top="70%" />
       </Divider>
-      <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={3} />
-      <Divider speed={0.1} offset={3}>
+      <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={2} />
+      <Divider speed={0.1} offset={2}>
         <UpDown>
           <SVG icon="box" className={hidden} width={6} fill={colors.blue} left="50%" top="75%" />
           <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="70%" top="20%" />
@@ -246,7 +242,7 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
         <SVG icon="box" width={12} fill={colors['grey-darkest']} left="20%" top="30%" />
         <SVG icon="hexa" width={8} stroke={colors['grey-darkest']} left="80%" top="70%" />
       </Divider>
-      <Content speed={0.4} offset={3}>
+      <Content speed={0.4} offset={2}>
         <Inner>
           <Title>About</Title>
           <AboutHero>
@@ -265,7 +261,7 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
           </AboutDesc>
         </Inner>
       </Content>
-      <Divider fill="#23262b" speed={0.2} offset={4}>
+      <Divider fill="#23262b" speed={0.2} offset={3}>
         <WaveWrapper>
           <InnerWave>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 338.05" preserveAspectRatio="none">
@@ -281,7 +277,7 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
           </InnerWave>
         </WaveWrapper>
       </Divider>
-      <Content speed={0.4} offset={4}>
+      <Content speed={0.4} offset={3}>
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
@@ -295,7 +291,7 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
           <a href="https://github.com/LeKoArts/gatsby-starter-portfolio-cara">Github Repository</a>.
         </Footer>
       </Content>
-      <Divider speed={0.1} offset={4}>
+      <Divider speed={0.1} offset={3}>
         <UpDown>
           <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="70%" top="20%" />
           <SVG icon="triangle" width={8} stroke={colors['grey-darkest']} left="25%" top="5%" />
@@ -315,40 +311,3 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
 );
 
 export default Index;
-
-Index.propTypes = {
-  data: PropTypes.object.isRequired,
-};
-
-export const query = graphql`
-  query IndexQuery {
-    p1: file(relativePath: { regex: "/project_1.jpg/" }) {
-      childImageSharp {
-        fluid(maxWidth: 800, maxHeight: 800, quality: 90) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
-        }
-      }
-    }
-    p2: file(relativePath: { regex: "/project_2.jpg/" }) {
-      childImageSharp {
-        fluid(maxWidth: 800, maxHeight: 800, quality: 90) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
-        }
-      }
-    }
-    p3: file(relativePath: { regex: "/project_3.jpg/" }) {
-      childImageSharp {
-        fluid(maxWidth: 800, maxHeight: 800, quality: 90) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
-        }
-      }
-    }
-    p4: file(relativePath: { regex: "/project_4.jpg/" }) {
-      childImageSharp {
-        fluid(maxWidth: 800, maxHeight: 800, quality: 90) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
-        }
-      }
-    }
-  }
-`;

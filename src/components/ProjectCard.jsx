@@ -2,54 +2,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'react-emotion';
-import Img from 'gatsby-image';
 
 const Wrapper = styled.a`
   width: 100%;
-  ${tw('shadow-lg relative no-underline')};
-  img {
-    transition: all 0.6s ease-in-out !important;
-    filter: grayscale(0);
-  }
+  ${tw('shadow-lg relative no-underline rounded-lg px-8 py-16 text-white')};
+  background: ${props => props.bg};
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   &:hover {
-    img {
-      transform: scale(1.15);
-      filter: grayscale(0);
-    }
-  }
-  @media (min-width: 900px) {
-    img {
-      filter: grayscale(1);
-    }
+    transform: translateY(-5px);
   }
 `;
 
-const Image = styled.div`
-  ${tw('overflow-hidden')};
-  @media (max-width: 1200px) {
-    height: 32vw;
-  }
+const Text = styled.div`
+  ${tw('opacity-75 font-sans')};
 `;
 
 const Title = styled.div`
-  ${tw(
-    'text-white uppercase text-md md:text-lg xl:text-xl tracking-wide px-4 py-2 lg:px-6 lg:py-4 font-sans absolute whitespace-no-wrap shadow-md'
-  )};
-  bottom: -20px;
-  right: -20px;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-  background: linear-gradient(60deg, #c1611f 0%, #ffa31b 100%);
-  @media (max-width: 900px) {
-    bottom: -10px;
-    right: -10px;
-  }
+  ${tw('text-white uppercase text-2xl md:text-3xl xl:text-4xl tracking-wide font-sans pt-8')};
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 `;
 
-const ProjectCard = ({ fluid, title, link, alt }) => (
-  <Wrapper href={link} target="_blank" rel="noopener noreferrer">
-    <Image>
-      <Img fluid={fluid} alt={alt} />
-    </Image>
+const ProjectCard = ({ title, link, children, bg }) => (
+  <Wrapper href={link} target="_blank" rel="noopener noreferrer" bg={bg}>
+    <Text>{children}</Text>
     <Title>{title}</Title>
   </Wrapper>
 );
@@ -57,8 +32,8 @@ const ProjectCard = ({ fluid, title, link, alt }) => (
 export default ProjectCard;
 
 ProjectCard.propTypes = {
-  fluid: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
+  children: PropTypes.object.isRequired,
+  bg: PropTypes.string.isRequired,
 };
