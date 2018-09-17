@@ -9,7 +9,6 @@ A portfolio starter for [Gatsby](https://www.gatsbyjs.org/). The target audience
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LeKoArts/gatsby-starter-portfolio-cara)
 
 - TailwindCSS & Emotion
-- Gatsby v2
 - React Spring
 - Playful & Colorful One-Page website with Parallax effect
 
@@ -19,7 +18,7 @@ Based on [gatsby-tailwind-demo](https://github.com/jlengstorf/gatsby-tailwind-de
 
 If you want to quickly bootstrap a design/photography portfolio or use it as a foundation for your personal site the *gatsby-starter-portfolio* are a perfect fit for you! The project's goal is to offer minimalistic and fast websites. 
 
-I hope you like my starters and create something awesome! To see some of my work you can visit my [website](https://www.lekoarts.de) or support me on [Patreon](https://www.patreon.com/lekoarts) to get some neat rewards (4K images, project files, tutorial insights).
+I hope you like my starters and create something awesome! To see some of my work you can visit my [website](https://www.lekoarts.de) or support me on [Patreon](https://www.patreon.com/lekoarts) to get some neat rewards (4K images, project files, tutorial insights). Every pledge on Patreon helps me creating more free starters!
 
 Also check out the other *gatsby-starter-portfolio*:
 - [gatsby-starter-portfolio-emma](https://github.com/LeKoArts/gatsby-starter-portfolio-emma)
@@ -30,6 +29,7 @@ Check out the [Gatsby Starter Portfolio Overview](https://gatsby-starter-portfol
 
 ## Features
 
+- Gatsby v2.0.0
 - [React Spring](https://github.com/drcmda/react-spring) (Used for Parallax effect)
 - [TailwindCSS](https://tailwindcss.com/) & [Emotion](https://emotion.sh/) for styling
     - Use the full power of TailwindCSS while generating small styles (as unused data gets deleted)
@@ -51,7 +51,7 @@ Check out the [Gatsby Starter Portfolio Overview](https://gatsby-starter-portfol
 
 Check your development environment! You'll need [Node.js](https://nodejs.org/en/), the [Gatsby CLI](https://www.gatsbyjs.org/docs/) and [node-gyp](https://github.com/nodejs/node-gyp#installation) installed. The official Gatsby website also lists two articles regarding this topic:
 - [Gatsby on Windows](https://www.gatsbyjs.org/docs/gatsby-on-windows/)
-- [Check your development environment](https://www.gatsbyjs.org/tutorial/part-one/#check-your-development-environment)
+- [Check your development environment](https://www.gatsbyjs.org/tutorial/part-zero/)
 
 To copy and install this starter run this command (with "project-name" being the name of your folder you wish to install it in):
 
