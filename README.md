@@ -91,10 +91,10 @@ module.exports = {
   siteLogo: '/logos/logo-1024.png', // Used for SEO and manifest
   siteDescription: 'Playful & Colorful One-Page website with Parallax effect',
 
-  siteFBAppID: '123456789', // Facebook App ID
+  // siteFBAppID: '123456789', // Facebook App ID - Optional
   userTwitter: '@cara', // Twitter Username
   ogSiteName: 'cara', // Facebook Site Name
-  ogLanguage: 'de_DE', // Facebook Language
+  ogLanguage: 'en_US', // Facebook Language
 
   // Manifest and Progress color
   themeColor: tailwind.colors.orange,
