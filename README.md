@@ -45,7 +45,7 @@ Check out the [Gatsby Starter Portfolio Overview](https://gatsby-starter-portfol
     - Traced SVG Loading (Lazy-Loading)
     - WebP Support
 
-**Please note:** Gatsby **v2** is currently in Beta and it will still take some time until it's officially released. Therefore you should expect some bugs. Also the parallax effect can be quite heavy for some older CPUs and the site uses some newer CSS features which will result in incompatibility with older browsers.
+**Please note:** The parallax effect can be quite heavy for some older CPUs and the site uses some newer CSS features which will result in incompatibility with older browsers.
 
 ## Getting Started
 
