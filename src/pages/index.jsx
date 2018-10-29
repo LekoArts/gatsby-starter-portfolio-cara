@@ -98,7 +98,7 @@ const AboutHero = styled.div`
 `;
 
 const Avatar = styled.img`
-  ${tw('rounded-full w-32 xl:w-48 shadow-lg h-full')};
+  ${tw('rounded-full w-32 xl:w-48 shadow-lg h-auto')};
 `;
 
 const AboutSub = styled.span`
