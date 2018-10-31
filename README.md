@@ -116,7 +116,7 @@ module.exports = {
 ```
 
 - For `icon` you have the options: `triangle, circle, arrowUp, upDown, box, hexa`
-- If you want the SVG to be hidden on mobile view, add the `className={hidden}`
+- If you want the SVG to be hidden on mobile view, add `className={hidden}` to the SVG component
 - You can define the width via the TailwindCSS width [option](https://tailwindcss.com/docs/width)
 - The colors get defined via the TailwindCSS color [option](https://tailwindcss.com/docs/colors)
     - Please note that you will either have to define the color in `stroke` **or** `fill` depending on the icon. For referance have a look at the currently used SVGs
