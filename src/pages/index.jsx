@@ -293,7 +293,7 @@ const Index = () => (
         </Inner>
         <Footer>
           &copy; 2018 by Gatsby Starter Portfolio Cara.{' '}
-          <a href="https://github.com/LeKoArts/gatsby-starter-portfolio-cara">Github Repository</a>.
+          <a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara">Github Repository</a>.
         </Footer>
       </Content>
       <Divider speed={0.1} offset={4}>
