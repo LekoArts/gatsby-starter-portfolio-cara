@@ -1,7 +1,7 @@
 /* global tw */
 import React from 'react';
 import styled from 'react-emotion';
-import { Parallax, ParallaxLayer } from 'react-spring';
+import { Parallax, ParallaxLayer } from 'react-spring/dist/addons';
 import 'typeface-cantata-one';
 import 'typeface-open-sans';
 
