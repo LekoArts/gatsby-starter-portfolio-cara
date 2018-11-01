@@ -10237,10 +10237,10 @@ react-side-effect@^1.1.0:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
 
-react-spring@^6.1.5:
-  version "6.1.5"
-  resolved "https://registry.yarnpkg.com/react-spring/-/react-spring-6.1.5.tgz#37e6106f19a5c76e892eafb43a6eb434c4cacbfc"
-  integrity sha512-0gWXUu0g+CMGT0oSKxgeYfFrZ5fHrtwl0GpYjO+IMD7nVGR7JvxLXs8bNROB2IHOvzZpQolNRnQQD+WCR8U9dQ==
+react-spring@^6.1.7-beta.0:
+  version "6.1.7-beta.0"
+  resolved "https://registry.yarnpkg.com/react-spring/-/react-spring-6.1.7-beta.0.tgz#a7c3d9aaea499bbe0071a249eb0e8449ddbe1e72"
+  integrity sha512-iKZecW5vLjj5+sFab9pqfUgo92y1li/Ovo6NxguBem0Pr5rdbrHGQsAyGugzhRehuJOm8dpNS3Eb7EGFNFD0mw==
   dependencies:
     "@babel/runtime" "^7.1.2"
 

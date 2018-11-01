@@ -1,7 +1,6 @@
 /* global tw */
 import React from 'react';
 import styled from 'react-emotion';
-import { Parallax, ParallaxLayer } from 'react-spring/dist/addons';
 import 'typeface-cantata-one';
 import 'typeface-open-sans';
 
@@ -14,6 +13,13 @@ import { colors } from '../../tailwind';
 import triangle from '../images/triangle.svg';
 import avatar from '../images/avatar.jpg';
 import '../styles/global';
+
+let Parallax;
+let ParallaxLayer;
+
+if (typeof window !== 'undefined') {
+  ({ Parallax, ParallaxLayer } = require('react-spring/dist/addons'));
+}
 
 const Divider = styled(ParallaxLayer)`
   ${tw('absolute w-full h-full')};
