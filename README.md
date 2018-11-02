@@ -116,7 +116,7 @@ module.exports = {
 ```
 
 - For `icon` you have the options: `triangle, circle, arrowUp, upDown, box, hexa`
-- If you want the SVG to be hidden on mobile view, add the `className={hidden}`
+- If you want the SVG to be hidden on mobile view, add `className={hidden}` to the SVG component
 - You can define the width via the TailwindCSS width [option](https://tailwindcss.com/docs/width)
 - The colors get defined via the TailwindCSS color [option](https://tailwindcss.com/docs/colors)
     - Please note that you will either have to define the color in `stroke` **or** `fill` depending on the icon. For referance have a look at the currently used SVGs
@@ -132,6 +132,6 @@ import 'typeface-cantata-one';
 import 'typeface-open-sans';
 ```
 
-We use [typefaces](https://github.com/KyleAMathews/typefaces) by Kyle Mathews. Have a look at the repository if you want to install & use other fonts.
+This starter uses [typefaces](https://github.com/KyleAMathews/typefaces) by Kyle Mathews. Have a look at the repository if you want to install & use other fonts.
 
 You'll also need to configure `fonts` in `tailwind.js` to reflect the changes. You then can use the fonts with `font-sans` and `font-serif`.
