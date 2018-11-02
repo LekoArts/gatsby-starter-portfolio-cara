@@ -19,6 +19,9 @@ let ParallaxLayer;
 
 if (typeof window !== 'undefined') {
   ({ Parallax, ParallaxLayer } = require('react-spring/dist/addons'));
+} else {
+  Parallax = () => <React.Fragment />;
+  ParallaxLayer = () => <React.Fragment />;
 }
 
 const Divider = styled(ParallaxLayer)`

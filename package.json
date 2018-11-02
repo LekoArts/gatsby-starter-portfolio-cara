@@ -25,7 +25,7 @@
     "react-dom": "^16.6.0",
     "react-emotion": "^9.2.12",
     "react-helmet": "^5.2.0",
-    "react-spring": "^6.1.7-beta.0",
+    "react-spring": "^6.1.6",
     "tailwindcss": "^0.6.6",
     "typeface-cantata-one": "^0.0.54",
     "typeface-open-sans": "^0.0.54"
@@ -36,11 +36,11 @@
     "portfolio"
   ],
   "scripts": {
-    "develop": "gatsby develop -o",
+    "dev": "gatsby develop -o",
     "build": "gatsby build",
     "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
     "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
-    "predevelop": "postcss tailwind.css -o tailwind.custom.css",
+    "predev": "postcss tailwind.css -o tailwind.custom.css",
     "prebuild": "postcss tailwind.css -o tailwind.custom.css"
   },
   "devDependencies": {
