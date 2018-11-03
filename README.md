@@ -16,7 +16,7 @@ Based on [gatsby-tailwind-demo](https://github.com/jlengstorf/gatsby-tailwind-de
 
 ## Why?
 
-If you want to quickly bootstrap a design/photography portfolio or use it as a foundation for your personal site the *gatsby-starter-portfolio* are a perfect fit for you! The project's goal is to offer minimalistic and fast websites. 
+If you want to quickly bootstrap a design/photography portfolio or use it as a foundation for your personal site the *gatsby-starter-portfolio* is a perfect fit for you! The project's goal is to offer minimalistic and fast websites. 
 
 I hope you like my starters and create something awesome! To see some of my work you can visit my [website](https://www.lekoarts.de) or support me on [Patreon](https://www.patreon.com/lekoarts) to get some neat rewards (4K images, project files, tutorial insights). Every pledge on Patreon helps me creating more free starters!
 
@@ -103,7 +103,7 @@ module.exports = {
 };
 ```
 
-2) Use the `tailwind.js` file to configure TailwindCSS. Their [documentation](https://tailwindcss.com/docs/configuration) explains it step-by-setp.
+2) Use the `tailwind.js` file to configure TailwindCSS. Their [documentation](https://tailwindcss.com/docs/configuration) explains it step-by-step.
 
 3) Modify the files in the `src/styles` directory.
 
@@ -119,7 +119,7 @@ module.exports = {
 - If you want the SVG to be hidden on mobile view, add `className={hidden}` to the SVG component
 - You can define the width via the TailwindCSS width [option](https://tailwindcss.com/docs/width)
 - The colors get defined via the TailwindCSS color [option](https://tailwindcss.com/docs/colors)
-    - Please note that you will either have to define the color in `stroke` **or** `fill` depending on the icon. For referance have a look at the currently used SVGs
+    - Please note that you will either have to define the color in `stroke` **or** `fill` depending on the icon. For reference, have a look at the currently used SVGs
 - The options `left` and `top` position the icon relatively to its parent container
 - You can also wrap the SVGs with `<UpDown />` or `<UpDownWide />` to animate them
 
