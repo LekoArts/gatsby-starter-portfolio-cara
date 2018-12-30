@@ -1,7 +1,7 @@
 import tw from 'tailwind.macro'
 import styled, { keyframes, css } from 'styled-components'
 
-export const rotate = keyframes`
+const rotate = keyframes`
   from {
     transform: rotate(0deg);
   }
@@ -22,7 +22,7 @@ const wave = keyframes`
   }
 `
 
-const upDownAnimation = keyframes`
+const upDown = keyframes`
   from {
     transform: translateY(0);
   }
@@ -31,7 +31,7 @@ const upDownAnimation = keyframes`
   }
 `
 
-const upDownWideAnimation = keyframes`
+const upDownWide = keyframes`
   from {
     transform: translateY(0);
   }
@@ -40,16 +40,28 @@ const upDownWideAnimation = keyframes`
   }
 `
 
+const upDownAnimation = css`
+  ${upDown} 4s ease-in-out infinite alternate;
+`
+
+const upDownWideAnimation = css`
+  ${upDownWide} 18s ease-in-out infinite alternate;
+`
+
 export const UpDown = styled.div`
-  animation: ${upDownAnimation} 4s ease-in-out infinite alternate;
+  animation: ${upDownAnimation};
   ${tw`pin absolute`};
 `
 
 export const UpDownWide = styled.div`
-  animation: ${upDownWideAnimation} 18s ease-in-out infinite alternate;
+  animation: ${upDownWideAnimation};
   ${tw`pin absolute`};
 `
 
-export const waveAnimation = css`
-  animation: ${wave} 20s linear infinite alternate;
+export const waveAnimation = length => css`
+  animation: ${wave} ${length} linear infinite alternate;
+`
+
+export const rotateAnimation = length => css`
+  animation: ${rotate} ${length} linear infinite;
 `
