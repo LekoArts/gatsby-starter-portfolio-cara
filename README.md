@@ -4,7 +4,7 @@
 
 A portfolio starter for [Gatsby](https://www.gatsbyjs.org/). The target audience are designers and photographers.
 
-[Demo Website](https://portfolio-cara.netlify.com/)
+[Demo Website](https://cara.lekoarts.de)
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LeKoArts/gatsby-starter-portfolio-cara) [![Edit gatsby-starter-portfolio-cara](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/LeKoArts/gatsby-starter-portfolio-cara/tree/master/)
 
@@ -12,7 +12,7 @@ A portfolio starter for [Gatsby](https://www.gatsbyjs.org/). The target audience
 - React Spring
 - Playful & Colorful One-Page website with Parallax effect
 
-Based on [gatsby-tailwind-demo](https://github.com/jlengstorf/gatsby-tailwind-demo).
+Thanks to [@bradlc](https://github.com/bradlc)’s work on [babel-plugin-tailwind-components](https://github.com/bradlc/babel-plugin-tailwind-components), we can easily get the power of Tailwind without the stylesheet bloat by passing Tailwind classes into styled-components with **Babel macros** 🎉.
 
 ## Why?
 
@@ -21,18 +21,18 @@ If you want to quickly bootstrap a design/photography portfolio or use it as a f
 I hope you like my starters and create something awesome! To see some of my work, you can visit my [website](https://www.lekoarts.de) or support me on [Patreon](https://www.patreon.com/lekoarts) to get some neat rewards (4K images, project files, tutorial insights). Every pledge on Patreon helps me create more free starters!
 
 Also, check out the other themes for *gatsby-starter-portfolio*:
-- [gatsby-starter-portfolio-emma](https://github.com/LeKoArts/gatsby-starter-portfolio-emma)
-- [gatsby-starter-portfolio-emilia](https://github.com/LeKoArts/gatsby-starter-portfolio-emilia)
-- [gatsby-starter-portfolio-bella](https://github.com/LeKoArts/gatsby-starter-portfolio-bella)
+- [gatsby-starter-portfolio-emma](https://github.com/LekoArts/gatsby-starter-portfolio-emma)
+- [gatsby-starter-portfolio-emilia](https://github.com/LekoArts/gatsby-starter-portfolio-emilia)
+- [gatsby-starter-portfolio-bella](https://github.com/LekoArts/gatsby-starter-portfolio-bella)
 
 Check out the [Gatsby Starter Portfolio Overview](https://gatsby-starter-portfolio.netlify.com/)!
 
 ## Features
 
-- Gatsby v2.0.0
 - [React Spring](https://github.com/drcmda/react-spring) (Used for Parallax effect)
-- [TailwindCSS](https://tailwindcss.com/) & [Emotion](https://emotion.sh/) for styling
+- [TailwindCSS](https://tailwindcss.com/) & [styled-components](https://www.styled-components.com/) for styling
     - Use the full power of TailwindCSS while generating small styles (as unused data gets deleted)
+    - Uses `tailwind.macro` (Babel macro) to have hot-reloading of Tailwind styles
 - SEO
     - Schema.org JSONLD
     - OpenGraph Tags
@@ -56,7 +56,7 @@ Check your development environment! You'll need [Node.js](https://nodejs.org/en/
 To copy and install this starter run this command (with "project-name" being the name of your folder you wish to install it in):
 
 ```
-gatsby new project-name https://github.com/LeKoArts/gatsby-starter-portfolio-cara
+gatsby new project-name https://github.com/LekoArts/gatsby-starter-portfolio-cara
 cd project-name
 npm run dev
 ```
@@ -72,9 +72,6 @@ npm run build
 ```
 Copy the content of the ``public`` folder to your webhost or use a website like Netlify which automates that for you.
 
-Make sure to use the right build command in your build settings e.g. if you use Netlify!
-Per default Netlify sets it to `gatsby build` but you have to use `yarn run build` to run postcss before building the Gatsby site.
-
 ## Configuration
 
 You have multiple options to configure this project.
@@ -87,6 +84,7 @@ module.exports = {
 
   siteTitle: 'Cara - Gatsby Starter Portfolio', // Navigation and Site Title
   siteTitleAlt: 'Cara', // Alternative Site title for SEO
+  siteTitleShort: 'Cara', // short_name for manifest
   siteUrl: 'https://portfolio-cara.netlify.com', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: '/logos/logo-1024.png', // Used for SEO and manifest
@@ -100,7 +98,7 @@ module.exports = {
   // Manifest and Progress color
   themeColor: tailwind.colors.orange,
   backgroundColor: tailwind.colors.blue,
-};
+}
 ```
 
 2) Use the `tailwind.js` file to configure TailwindCSS. Their [documentation](https://tailwindcss.com/docs/configuration) explains it step-by-step.

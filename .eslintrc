@@ -9,6 +9,9 @@
       "classes": true
     }
   },
+  "globals": {
+    "tw": true
+  },
   "env": {
     "browser": true,
     "node": true,
@@ -18,7 +21,7 @@
     "no-unused-vars": [
       1,
       {
-        "argsIgnorePattern": "res|next|^err"
+        "argsIgnorePattern": "res|next|stage|^err|on|config"
       }
     ],
     "arrow-body-style": [2, "as-needed"],
@@ -28,18 +31,23 @@
         "props": false
       }
     ],
+    "no-unused-expressions": [
+      1, {
+        "allowTaggedTemplates": true
+      }
+    ],
     "no-console": 0,
-    "linebreak-style": 0,
     "no-use-before-define": 0,
-    "import/no-extraneous-dependencies": 0,
-    "react/no-danger": 0,
-    "import/prefer-default-export": 0,
+    "no-underscore-dangle": 0,
+    "linebreak-style": 0,
+    "consistent-return": 0,
     "import": 0,
     "func-names": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/prefer-default-export": 0,
     "space-before-function-paren": 0,
     "import/extensions": 0,
-    "no-underscore-dangle": 0,
-    "consistent-return": 0,
+    "react/no-danger": 0,
     "react/display-name": 1,
     "react/react-in-jsx-scope": 0,
     "react/forbid-prop-types": 0,
@@ -59,11 +67,12 @@
         "allowTemplateLiterals": true
       }
     ],
-    "indent": ["error", 2],
+    "indent": ["error", 2, {"SwitchCase": 1}],
     "prettier/prettier": [
       "error",
       {
         "trailingComma": "es5",
+        "semi": false,
         "singleQuote": true,
         "printWidth": 120
       }
