@@ -1,5 +1,5 @@
 import tw from 'tailwind.macro'
-import styled, { keyframes, css } from 'styled-components';
+import styled, { keyframes, css } from 'styled-components'
 
 export const rotate = keyframes`
   from {
@@ -8,7 +8,7 @@ export const rotate = keyframes`
   to {
     transform: rotate(360deg);
   }
-`;
+`
 
 const wave = keyframes`
   0% {
@@ -20,7 +20,7 @@ const wave = keyframes`
   100% {
     d: path("M 0 100 Q 150 350 400 200 Q 650 50 800 300 L 800 0 L 0 0 L 0 100 Z");
   }
-`;
+`
 
 const upDownAnimation = keyframes`
   from {
@@ -29,7 +29,7 @@ const upDownAnimation = keyframes`
   to {
     transform: translateY(30px);
   }
-`;
+`
 
 const upDownWideAnimation = keyframes`
   from {
@@ -38,18 +38,18 @@ const upDownWideAnimation = keyframes`
   to {
     transform: translateY(200px);
   }
-`;
+`
 
 export const UpDown = styled.div`
   animation: ${upDownAnimation} 4s ease-in-out infinite alternate;
   ${tw`pin absolute`};
-`;
+`
 
 export const UpDownWide = styled.div`
   animation: ${upDownWideAnimation} 18s ease-in-out infinite alternate;
   ${tw`pin absolute`};
-`;
+`
 
 export const waveAnimation = css`
   animation: ${wave} 20s linear infinite alternate;
-`;
+`

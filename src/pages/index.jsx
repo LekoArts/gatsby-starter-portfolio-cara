@@ -1,18 +1,18 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 import tw from 'tailwind.macro'
-import 'typeface-cantata-one';
-import 'typeface-open-sans';
-import { Parallax, ParallaxLayer } from 'react-spring';
-import SEO from '../components/SEO';
-import SVG from '../components/SVG';
-import ProjectCard from '../components/ProjectCard';
-import { rotate, UpDown, UpDownWide, waveAnimation } from '../styles/animations';
-import { hidden } from '../styles/utils';
-import { colors } from '../../tailwind';
-import triangle from '../images/triangle.svg';
-import avatar from '../images/avatar.jpg';
-import '../styles/global';
+import 'typeface-cantata-one'
+import 'typeface-open-sans'
+import { Parallax, ParallaxLayer } from 'react-spring'
+import SEO from '../components/SEO'
+import SVG from '../components/SVG'
+import ProjectCard from '../components/ProjectCard'
+import { rotate, UpDown, UpDownWide, waveAnimation } from '../styles/animations'
+import { hidden } from '../styles/utils'
+import { colors } from '../../tailwind'
+import triangle from '../images/triangle.svg'
+import avatar from '../images/avatar.jpg'
+import '../styles/global'
 
 const Divider = styled(ParallaxLayer)`
   ${tw`absolute w-full h-full`};
@@ -21,28 +21,28 @@ const Divider = styled(ParallaxLayer)`
     fill: ${props => props.fill};
   }
   clip-path: ${props => props.clipPath};
-`;
+`
 
 const DividerMiddle = styled(Divider)`
   clip-path: polygon(0 15%, 100% 25%, 100% 85%, 0 75%);
-`;
+`
 
 const Content = styled(ParallaxLayer)`
   ${tw`p-6 md:p-12 lg:p-24 justify-center items-center flex z-50`};
-`;
+`
 
 const Hero = styled.div`
   ${tw`w-full xl:w-2/3`};
-`;
+`
 
 const Inner = styled.div`
   ${tw`w-full xxl:w-2/3 text-center lg:text-left`};
-`;
+`
 
 const BigTitle = styled.h1`
   ${tw`text-5xl lg:text-6xl font-serif text-white mb-6 tracking-wide`};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
-`;
+`
 
 const Title = styled.h1`
   ${tw`text-4xl lg:text-4xl font-serif text-white mb-8 tracking-wide relative inline-block`};
@@ -58,12 +58,12 @@ const Title = styled.h1`
     left: -60px;
     top: 5px;
   }
-`;
+`
 
 const Subtitle = styled.p`
   ${tw`text-2xl lg:text-4xl font-sans text-white mt-8 xxl:w-3/4`};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
-`;
+`
 
 const ProjectsWrapper = styled.div`
   ${tw`flex flex-wrap justify-between mt-8`};
@@ -77,12 +77,12 @@ const ProjectsWrapper = styled.div`
     grid-template-columns: 1fr;
     grid-gap: 2rem;
   }
-`;
+`
 
 const WaveWrapper = styled.div`
   ${tw`absolute pin-b w-full`};
   transform: matrix(1, 0, 0, -1, 0, 0);
-`;
+`
 
 const InnerWave = styled.div`
   ${tw`relative h-full`};
@@ -90,23 +90,23 @@ const InnerWave = styled.div`
     width: 100%;
     height: 40vh;
   }
-`;
+`
 
 const AboutHero = styled.div`
   ${tw`flex flex-col lg:flex-row items-center mt-8`};
-`;
+`
 
 const Avatar = styled.img`
   ${tw`rounded-full w-32 xl:w-48 shadow-lg h-auto`};
-`;
+`
 
 const AboutSub = styled.span`
   ${tw`text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl`};
-`;
+`
 
 const AboutDesc = styled.p`
   ${tw`text-grey-light text-lg md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify`};
-`;
+`
 
 const ContactText = styled.p`
   ${tw`text-grey-light font-sans text-xl md:text-2xl lg:text-3xl`};
@@ -114,7 +114,7 @@ const ContactText = styled.p`
     color: #e07628;
     text-decoration: none;
   }
-`;
+`
 
 const Footer = styled.footer`
   ${tw`text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg`};
@@ -122,7 +122,7 @@ const Footer = styled.footer`
     color: #e07628;
     text-decoration: none;
   }
-`;
+`
 
 const Index = () => (
   <React.Fragment>
@@ -312,6 +312,6 @@ const Index = () => (
       </Divider>
     </Parallax>
   </React.Fragment>
-);
+)
 
-export default Index;
+export default Index

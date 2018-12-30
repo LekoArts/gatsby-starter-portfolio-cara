@@ -130,7 +130,7 @@ const colors = {
   'pink-light': '#fa7ea8',
   'pink-lighter': '#ffbbca',
   'pink-lightest': '#ffebef',
-};
+}
 
 module.exports = {
   /*
@@ -751,4 +751,4 @@ module.exports = {
     prefix: '',
     important: false,
   },
-};
+}

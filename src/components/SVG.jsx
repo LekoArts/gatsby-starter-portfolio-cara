@@ -1,8 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import tw from 'tailwind.macro'
-import { width as twWidth } from '../../tailwind';
+import { width as twWidth } from '../../tailwind'
 
 const Wrapper = styled.svg`
   ${tw`stroke-current absolute`};
@@ -11,7 +11,7 @@ const Wrapper = styled.svg`
   fill: ${props => props.fill};
   left: ${props => props.left};
   top: ${props => props.top};
-`;
+`
 
 const icons = {
   triangle: {
@@ -65,7 +65,7 @@ const icons = {
     ),
     viewBox: '0 0 30 30',
   },
-};
+}
 
 const SVG = ({ stroke, fill, width, icon, left, top, className }) => (
   <Wrapper
@@ -79,9 +79,9 @@ const SVG = ({ stroke, fill, width, icon, left, top, className }) => (
   >
     {icons[icon].shape}
   </Wrapper>
-);
+)
 
-export default SVG;
+export default SVG
 
 SVG.propTypes = {
   stroke: PropTypes.string,
@@ -91,7 +91,7 @@ SVG.propTypes = {
   left: PropTypes.string,
   top: PropTypes.string,
   className: PropTypes.string,
-};
+}
 
 SVG.defaultProps = {
   stroke: 'transparent',
@@ -100,4 +100,4 @@ SVG.defaultProps = {
   left: '0%',
   top: '0%',
   className: 'fancy-icon',
-};
+}
