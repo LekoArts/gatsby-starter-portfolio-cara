@@ -1,5 +1,5 @@
-/* global tw */
-import styled, { keyframes, css } from 'react-emotion';
+import tw from 'tailwind.macro'
+import styled, { keyframes, css } from 'styled-components';
 
 export const rotate = keyframes`
   from {
@@ -42,12 +42,12 @@ const upDownWideAnimation = keyframes`
 
 export const UpDown = styled.div`
   animation: ${upDownAnimation} 4s ease-in-out infinite alternate;
-  ${tw('pin absolute')};
+  ${tw`pin absolute`};
 `;
 
 export const UpDownWide = styled.div`
   animation: ${upDownWideAnimation} 18s ease-in-out infinite alternate;
-  ${tw('pin absolute')};
+  ${tw`pin absolute`};
 `;
 
 export const waveAnimation = css`

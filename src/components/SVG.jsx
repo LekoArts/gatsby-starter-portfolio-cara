@@ -1,11 +1,11 @@
-/* global tw */
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'react-emotion';
+import styled from 'styled-components';
+import tw from 'tailwind.macro'
 import { width as twWidth } from '../../tailwind';
 
 const Wrapper = styled.svg`
-  ${tw('stroke-current absolute')};
+  ${tw`stroke-current absolute`};
   color: ${props => props.stroke};
   width: ${props => props.svgWidth};
   fill: ${props => props.fill};

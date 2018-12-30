@@ -1,7 +1,6 @@
-/* eslint no-unused-expressions: 0 */
-import { injectGlobal } from 'emotion';
+import { createGlobalStyle } from 'styled-components';
 
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
   *, *:before, *:after {
     box-sizing: inherit;
   }
@@ -22,3 +21,5 @@ injectGlobal`
     padding: 0;
   }
 `;
+
+export default GlobalStyle
