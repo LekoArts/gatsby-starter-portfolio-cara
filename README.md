@@ -88,7 +88,7 @@ module.exports = {
   siteTitle: 'Cara - Gatsby Starter Portfolio', // Navigation and Site Title
   siteTitleAlt: 'Cara', // Alternative Site title for SEO
   siteTitleShort: 'Cara', // short_name for manifest
-  siteUrl: 'https://portfolio-cara.netlify.com', // Domain of your site. No trailing slash!
+  siteUrl: 'https://cara.lekoarts.de', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: '/logos/logo-1024.png', // Used for SEO and manifest
   siteDescription: 'Playful & Colorful One-Page website with Parallax effect',
@@ -111,13 +111,13 @@ module.exports = {
 4. You can also place the icons somewhere else on the page, modify their animation and hide them on smaller screens:
 
 ```JSX
-  <SVG icon="triangle" className={hidden} width={48} stroke={colors.orange} left="10%" top="20%" />
+  <SVG icon="triangle" hideMobile width={48} stroke={colors.orange} left="10%" top="20%" />
   <SVG icon="hexa" width={48} stroke={colors.red} left="60%" top="70%" />
   <SVG icon="box" width={6} fill={colors['grey-darker']} left="60%" top="15%" />
 ```
 
 - For `icon`, you have the options: `triangle, circle, arrowUp, upDown, box, hexa`
-- If you want the SVG to be hidden on mobile view, add `className={hidden}` to the SVG component
+- If you want the SVG to be hidden on mobile view, add `hideMobile` to the SVG component
 - You can define the width via the TailwindCSS width [option](https://tailwindcss.com/docs/width)
 - The colors get defined via the TailwindCSS color [option](https://tailwindcss.com/docs/colors)
   - Please note that you will either have to define the color in `stroke` **or** `fill` depending on the icon. For reference, have a look at the currently used SVGs
@@ -126,7 +126,7 @@ module.exports = {
 
 ### Typography
 
-Instead of relying on Google's CDN to host its fonts, this site self-hosts the fonts and therefore benefits from increased performance. The installed fonts can be found in `src/pages/index.jsx`:
+Instead of relying on Google's CDN to host its fonts, this site self-hosts the fonts and therefore benefits from increased performance. The installed fonts can be found in `src/components/Layout.jsx`:
 
 ```JSX
 import 'typeface-cantata-one';

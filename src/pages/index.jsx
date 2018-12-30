@@ -1,14 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
-import 'typeface-cantata-one'
-import 'typeface-open-sans'
 import { Parallax, ParallaxLayer } from 'react-spring/addons.cjs'
-import SEO from '../components/SEO'
+import Layout from '../components/Layout'
 import SVG from '../components/SVG'
 import ProjectCard from '../components/ProjectCard'
 import { rotateAnimation, UpDown, UpDownWide, waveAnimation } from '../styles/animations'
-import GlobalStyle from '../styles/global'
 import { colors } from '../../tailwind'
 import triangle from '../images/triangle.svg'
 import avatar from '../images/avatar.jpg'
@@ -112,24 +109,15 @@ const AboutDesc = styled.p`
 
 const ContactText = styled.p`
   ${tw`text-grey-light font-sans text-xl md:text-2xl lg:text-3xl`};
-  a {
-    color: #e07628;
-    text-decoration: none;
-  }
 `
 
 const Footer = styled.footer`
   ${tw`text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg`};
-  a {
-    color: #e07628;
-    text-decoration: none;
-  }
 `
 
 const Index = () => (
   <>
-    <SEO />
-    <GlobalStyle />
+    <Layout />
     <Parallax pages={5}>
       <Divider speed={0.2} offset={0}>
         <UpDown>

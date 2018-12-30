@@ -6,9 +6,9 @@ module.exports = {
   siteTitle: 'Cara - Gatsby Starter Portfolio', // Navigation and Site Title
   siteTitleAlt: 'Cara', // Alternative Site title for SEO
   siteTitleShort: 'Cara', // short_name for manifest
-  siteUrl: 'https://portfolio-cara.netlify.com', // Domain of your site. No trailing slash!
+  siteUrl: 'https://cara.lekoarts.de', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
-  siteLogo: '/logos/logo-1024.png', // Used for SEO and manifest
+  siteLogo: '/logo.png', // Used for SEO and manifest
   siteDescription: 'Playful & Colorful One-Page website with Parallax effect',
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
