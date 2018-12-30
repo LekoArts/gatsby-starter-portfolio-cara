@@ -1,6 +1,6 @@
-const config = require('./config/website');
+const config = require('./config/website')
 
-const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
+const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
 
 module.exports = {
   /* General Information */
@@ -11,7 +11,7 @@ module.exports = {
   /* Plugins */
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-emotion',
+    'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -25,7 +25,7 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: config.siteTitle,
-        short_name: config.siteTitleAlt,
+        short_name: config.siteTitleShort,
         description: config.siteDescription,
         start_url: config.pathPrefix,
         background_color: config.backgroundColor,
@@ -49,4 +49,4 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-plugin-netlify',
   ],
-};
+}

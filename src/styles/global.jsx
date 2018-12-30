@@ -1,7 +1,6 @@
-/* eslint no-unused-expressions: 0 */
-import { injectGlobal } from 'emotion';
+import { createGlobalStyle } from 'styled-components'
 
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
   *, *:before, *:after {
     box-sizing: inherit;
   }
@@ -21,4 +20,10 @@ injectGlobal`
     margin: 0;
     padding: 0;
   }
-`;
+  a {
+    color: #e07628;
+    text-decoration: none;
+  }
+`
+
+export default GlobalStyle

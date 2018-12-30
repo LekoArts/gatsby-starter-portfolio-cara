@@ -1,14 +1,14 @@
-/* global tw */
-import styled, { keyframes, css } from 'react-emotion';
+import tw from 'tailwind.macro'
+import styled, { keyframes, css } from 'styled-components'
 
-export const rotate = keyframes`
+const rotate = keyframes`
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-`;
+`
 
 const wave = keyframes`
   0% {
@@ -20,36 +20,48 @@ const wave = keyframes`
   100% {
     d: path("M 0 100 Q 150 350 400 200 Q 650 50 800 300 L 800 0 L 0 0 L 0 100 Z");
   }
-`;
+`
 
-const upDownAnimation = keyframes`
+const upDown = keyframes`
   from {
     transform: translateY(0);
   }
   to {
     transform: translateY(30px);
   }
-`;
+`
 
-const upDownWideAnimation = keyframes`
+const upDownWide = keyframes`
   from {
     transform: translateY(0);
   }
   to {
     transform: translateY(200px);
   }
-`;
+`
+
+const upDownAnimation = css`
+  ${upDown} 4s ease-in-out infinite alternate;
+`
+
+const upDownWideAnimation = css`
+  ${upDownWide} 18s ease-in-out infinite alternate;
+`
 
 export const UpDown = styled.div`
-  animation: ${upDownAnimation} 4s ease-in-out infinite alternate;
-  ${tw('pin absolute')};
-`;
+  animation: ${upDownAnimation};
+  ${tw`pin absolute`};
+`
 
 export const UpDownWide = styled.div`
-  animation: ${upDownWideAnimation} 18s ease-in-out infinite alternate;
-  ${tw('pin absolute')};
-`;
+  animation: ${upDownWideAnimation};
+  ${tw`pin absolute`};
+`
 
-export const waveAnimation = css`
-  animation: ${wave} 20s linear infinite alternate;
-`;
+export const waveAnimation = length => css`
+  animation: ${wave} ${length} linear infinite alternate;
+`
+
+export const rotateAnimation = length => css`
+  animation: ${rotate} ${length} linear infinite;
+`

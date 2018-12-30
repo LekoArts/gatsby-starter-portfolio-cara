@@ -130,7 +130,7 @@ const colors = {
   'pink-light': '#fa7ea8',
   'pink-lighter': '#ffbbca',
   'pink-lightest': '#ffebef',
-};
+}
 
 module.exports = {
   /*
@@ -195,7 +195,7 @@ module.exports = {
 
   fonts: {
     sans: [
-      '"Open Sans"',
+      'Open Sans',
       '-apple-system',
       'BlinkMacSystemFont',
       'Segoe UI',
@@ -209,7 +209,7 @@ module.exports = {
       'sans-serif',
     ],
     serif: [
-      '"Cantata One"',
+      'Cantata One',
       'Constantia',
       'Lucida Bright',
       'Lucidabright',
@@ -751,4 +751,4 @@ module.exports = {
     prefix: '',
     important: false,
   },
-};
+}

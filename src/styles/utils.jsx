@@ -1,6 +1,6 @@
-/* global tw */
-import { css } from 'react-emotion';
+import tw from 'tailwind.macro'
+import { css } from 'styled-components'
 
 export const hidden = css`
-  ${tw('hidden xl:block')};
-`;
+  ${tw`hidden xl:block`};
+`

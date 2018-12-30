@@ -1,13 +1,13 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import config from '../../config/website';
+import React from 'react'
+import Helmet from 'react-helmet'
+import config from '../../config/website'
 
 const SEO = () => {
-  const title = config.siteTitle;
-  const description = config.siteDescription;
-  const realPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
-  const image = config.siteUrl + realPrefix + config.siteLogo;
-  const blogURL = config.siteUrl + config.pathPrefix;
+  const title = config.siteTitle
+  const description = config.siteDescription
+  const realPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
+  const image = config.siteUrl + realPrefix + config.siteLogo
+  const blogURL = config.siteUrl + config.pathPrefix
   const schemaOrgJSONLD = [
     {
       '@context': 'http://schema.org',
@@ -16,7 +16,7 @@ const SEO = () => {
       name: title,
       alternateName: config.siteTitleAlt ? config.siteTitleAlt : '',
     },
-  ];
+  ]
   return (
     <Helmet>
       <html lang={config.siteLanguage} />
@@ -24,6 +24,7 @@ const SEO = () => {
       <link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+      <meta name="gatsby-starter" content="Gatsby Starter Portfolio Cara" />
       <link rel="shortcut icon" href="favicon.ico" />
       <meta name="msapplication-TileColor" content={config.backgroundColor} />
       <meta name="msapplication-config" content="browserconfig.xml" />
@@ -42,7 +43,7 @@ const SEO = () => {
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
     </Helmet>
-  );
-};
+  )
+}
 
-export default SEO;
+export default SEO
