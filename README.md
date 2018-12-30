@@ -108,7 +108,9 @@ module.exports = {
 
 3. Modify the files in the `src/styles` directory.
 
-4. You can also place the icons somewhere else on the page, modify their animation and hide them on smaller screens:
+4. Modify the sections in the `src/views` directory. They contain the Dividers & SVG icons.
+
+5. You can also place the icons somewhere else on the page, modify their animation and hide them on smaller screens:
 
 ```JSX
   <SVG icon="triangle" hideMobile width={48} stroke={colors.orange} left="10%" top="20%" />

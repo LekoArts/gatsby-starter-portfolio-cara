@@ -93,7 +93,7 @@ SVG.propTypes = {
   icon: PropTypes.oneOf(['triangle', 'circle', 'arrowUp', 'upDown', 'box', 'hexa']).isRequired,
   left: PropTypes.string,
   top: PropTypes.string,
-  hidden: PropTypes.bool,
+  hiddenMobile: PropTypes.bool,
 }
 
 SVG.defaultProps = {
@@ -102,5 +102,5 @@ SVG.defaultProps = {
   fill: 'none',
   left: '0%',
   top: '0%',
-  hidden: false,
+  hiddenMobile: false,
 }
