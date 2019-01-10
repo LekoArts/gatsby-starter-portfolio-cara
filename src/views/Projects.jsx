@@ -7,18 +7,18 @@ import { UpDown, UpDownWide } from '../styles/animations'
 import { colors } from '../../tailwind'
 import SVG from '../components/SVG'
 
-const Projects = ({ children }) => (
+const Projects = ({ children, offset }) => (
   <>
     <DividerMiddle
       bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
       speed={-0.2}
-      offset={1.1}
+      offset={`${offset}.1`}
       factor={2}
     />
-    <Content speed={0.4} offset={1.2} factor={2}>
+    <Content speed={0.4} offset={`${offset}.2`} factor={2}>
       <Inner>{children}</Inner>
     </Content>
-    <Divider speed={0.1} offset={1} factor={2}>
+    <Divider speed={0.1} offset={offset} factor={2}>
       <UpDown>
         <SVG icon="box" width={6} fill={colors.white} left="85%" top="75%" />
         <SVG icon="upDown" width={8} fill={colors.teal} left="70%" top="20%" />
@@ -47,4 +47,5 @@ export default Projects
 
 Projects.propTypes = {
   children: PropTypes.node.isRequired,
+  offset: PropTypes.number.isRequired,
 }

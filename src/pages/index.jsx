@@ -61,13 +61,13 @@ const Index = () => (
   <>
     <Layout />
     <Parallax pages={5}>
-      <Hero>
+      <Hero offset={0}>
         <BigTitle>
           Hello, <br /> I'm John Doe.
         </BigTitle>
         <Subtitle>I'm creating noice web experiences for the next generation of consumer-facing companies.</Subtitle>
       </Hero>
-      <Projects>
+      <Projects offset={1}>
         <Title>Projects</Title>
         <ProjectsWrapper>
           <ProjectCard
@@ -100,7 +100,7 @@ const Index = () => (
           </ProjectCard>
         </ProjectsWrapper>
       </Projects>
-      <About>
+      <About offset={3}>
         <Title>About</Title>
         <AboutHero>
           <Avatar src={avatar} alt="John Doe" />
@@ -117,7 +117,7 @@ const Index = () => (
           right?
         </AboutDesc>
       </About>
-      <Contact>
+      <Contact offset={4}>
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
