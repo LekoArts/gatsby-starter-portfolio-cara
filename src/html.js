@@ -22,8 +22,8 @@ const HTML = ({ htmlAttributes, headComponents, bodyAttributes, preBodyComponent
         }}
       >
         Your browser has JavaScript disabled or does not support JavaScript. This website does not work properly without
-        it. Any recently updated browser should display this page properly. This site is guarenteed to work on e.g. the
-        latest Chrome or Firefox
+        it. Any recently updated browser should display this page properly. This site is guaranteed to work on e.g. the
+        latest Chrome or Firefox.
         <br />
         <br />
         Sorry for the inconvenience.
