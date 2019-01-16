@@ -19,6 +19,8 @@ const HTML = ({ htmlAttributes, headComponents, bodyAttributes, preBodyComponent
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
+          color: 'black',
+          backgroundColor: 'white',
         }}
       >
         Your browser has JavaScript disabled or does not support JavaScript. This website does not work properly without
