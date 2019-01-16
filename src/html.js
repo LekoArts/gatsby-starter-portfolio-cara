@@ -2,8 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const HTML = ({ htmlAttributes, headComponents, bodyAttributes, preBodyComponents, body, postBodyComponents }) => (
-  <html lang="en"
-    {...htmlAttributes}>
+  <html lang="en" {...htmlAttributes}>
     <head>
       <meta charSet="utf-8" />
       <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -15,13 +14,16 @@ const HTML = ({ htmlAttributes, headComponents, bodyAttributes, preBodyComponent
       <div key="body" id="___gatsby" dangerouslySetInnerHTML={{ __html: body }} />
       {postBodyComponents}
 
-      <noscript style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center'
-      }}>
+      <noscript
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
         Your browser has JavaScript disabled or does not support JavaScript. This website does not work properly without
-        it. Any recently updated browser should display this page properly. This site is guarenteed to work on e.g. the latest Chrome or Firefox
+        it. Any recently updated browser should display this page properly. This site is guarenteed to work on e.g. the
+        latest Chrome or Firefox
         <br />
         <br />
         Sorry for the inconvenience.
