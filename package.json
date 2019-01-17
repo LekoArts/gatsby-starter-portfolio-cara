@@ -38,8 +38,7 @@
     "build": "gatsby build",
     "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
     "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
-    "lint:ci": "yarn lint --format junit -o results/eslint/result.xml",
-    "format": "prettier \"**/*.{md,mdx} \" --write"
+    "lint:ci": "yarn lint --format junit -o results/eslint/result.xml"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
