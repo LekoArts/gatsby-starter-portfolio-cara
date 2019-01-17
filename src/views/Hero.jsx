@@ -12,9 +12,9 @@ const Wrapper = styled.div`
   ${tw`w-full xl:w-2/3`};
 `
 
-const Hero = ({ children }) => (
+const Hero = ({ children, offset }) => (
   <>
-    <Divider speed={0.2} offset={0}>
+    <Divider speed={0.2} offset={offset}>
       <UpDown>
         <SVG icon="triangle" hiddenMobile width={48} stroke={colors.orange} left="10%" top="20%" />
         <SVG icon="hexa" width={48} stroke={colors.red} left="60%" top="70%" />
@@ -41,7 +41,7 @@ const Hero = ({ children }) => (
       <SVG icon="hexa" width={16} stroke={colors['grey-darker']} left="10%" top="50%" />
       <SVG icon="hexa" width={8} stroke={colors['grey-darker']} left="80%" top="70%" />
     </Divider>
-    <Content speed={0.4} offset={0}>
+    <Content speed={0.4} offset={offset}>
       <Wrapper>{children}</Wrapper>
     </Content>
   </>
@@ -51,4 +51,5 @@ export default Hero
 
 Hero.propTypes = {
   children: PropTypes.node.isRequired,
+  offset: PropTypes.number.isRequired,
 }
