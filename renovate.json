@@ -30,5 +30,5 @@
   "rangeStrategy": "bump",
   "bumpVersion": null,
   "semanticCommits": true,
-  "schedule": "before 8am on Monday"
+  "schedule": "on the 2nd and 4th day instance on sunday after 9pm"
 }
