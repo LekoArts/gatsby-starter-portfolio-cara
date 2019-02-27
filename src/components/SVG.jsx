@@ -90,7 +90,7 @@ SVG.propTypes = {
   stroke: PropTypes.string,
   fill: PropTypes.string,
   width: PropTypes.number,
-  icon: PropTypes.oneOf(['triangle', 'circle', 'arrowUp', 'upDown', 'box', 'hexa']).isRequired,
+  icon: PropTypes.oneOf(Object.keys(icons)).isRequired,
   left: PropTypes.string,
   top: PropTypes.string,
   hiddenMobile: PropTypes.bool,
