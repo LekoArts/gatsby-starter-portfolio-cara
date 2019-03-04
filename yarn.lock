@@ -10746,9 +10746,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeface-cantata-one@^0.0.54:
-  version "0.0.54"
-  resolved "https://registry.yarnpkg.com/typeface-cantata-one/-/typeface-cantata-one-0.0.54.tgz#5442843224cca606a76d0fdc97a6dffb13c11a70"
+typeface-cantata-one@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-cantata-one/-/typeface-cantata-one-0.0.72.tgz#ca66b8269031067b67303716324e6bda2d71c058"
+  integrity sha512-FPMqyQvGwA1anWtX1SnLpGLo5pZGRWToNdHIBxPQhb2X8l5x9JiGeFJyq+hjwFx8QJy+V/ma5XFx0dpghGZCzQ==
 
 typeface-open-sans@^0.0.54:
   version "0.0.54"
