@@ -123,7 +123,7 @@ module.exports = {
   <SVG icon="box" width={6} fill={colors['grey-darker']} left="60%" top="15%" />
 ```
 
-- For `icon`, you have the options: `triangle, circle, arrowUp, upDown, box, hexa`
+- For `icon`, you have the options: `triangle, circle, arrowUp, upDown, box, hexa, cross`
 - If you want the SVG to be hidden on mobile view, add `hideMobile` to the SVG component
 - You can define the width via the TailwindCSS width [option](https://tailwindcss.com/docs/width)
 - The colors get defined via the TailwindCSS color [option](https://tailwindcss.com/docs/colors)
