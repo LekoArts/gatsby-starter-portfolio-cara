@@ -10394,9 +10394,9 @@ table@^5.2.3:
     string-width "^3.0.0"
 
 tailwind.macro@^1.0.0-alpha.2:
-  version "1.0.0-alpha.5"
-  resolved "https://registry.yarnpkg.com/tailwind.macro/-/tailwind.macro-1.0.0-alpha.5.tgz#95b190f3eec5230dd39fefd1b1da5dd57c40c6e1"
-  integrity sha512-NmfPsyswRoWcfJjiEdXnRr1/CXPX8kTr+FdddcYE5yNVcOEojy0b1PHYDTa9vAwd4debD82xDL6aaYpZQfUyTg==
+  version "1.0.0-alpha.6"
+  resolved "https://registry.yarnpkg.com/tailwind.macro/-/tailwind.macro-1.0.0-alpha.6.tgz#8b409acc57fce74e891ad821a674e7304ae0cdb3"
+  integrity sha512-i2n0AtfR/PBJHmlbAv9MyYBMwT4YUCMz46jRwHSMHdmX8CUkBvBZmAMoFK2Or+EuwVal4g7eJokGqtqu3nbbeQ==
   dependencies:
     "@babel/parser" "^7.4.2"
     babel-plugin-macros "^2.5.1"
