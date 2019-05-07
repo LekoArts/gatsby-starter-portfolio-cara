@@ -5,7 +5,7 @@ import tw from 'tailwind.macro'
 import theme from 'tailwindcss/defaultTheme'
 import { hidden } from '../styles/utils'
 
-const twWidth = theme.width
+const twWidth = theme.spacing
 
 const Wrapper = styled.svg`
   ${tw`absolute`};
