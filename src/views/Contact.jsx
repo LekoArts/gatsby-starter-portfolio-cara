@@ -13,7 +13,7 @@ const { colors } = theme
 const grayDarkest = colors.gray['800']
 
 const WaveWrapper = styled.div`
-  ${tw`absolute pin-b w-full`};
+  ${tw`absolute bottom-0 w-full`};
   transform: matrix(1, 0, 0, -1, 0, 0);
 `
 

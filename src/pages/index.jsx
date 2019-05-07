@@ -43,7 +43,7 @@ const AboutDesc = tw.p`text-grey-light text-lg md:text-xl lg:text-2xl font-sans 
 
 const ContactText = tw.p`text-grey-light font-sans text-xl md:text-2xl lg:text-3xl`
 
-const Footer = tw.footer`text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg`
+const Footer = tw.footer`text-center text-grey absolute bottom-0 p-6 font-sans text-md lg:text-lg`
 
 const Index = () => (
   <>
