@@ -23,8 +23,8 @@
     "react-helmet": "^5.2.0",
     "react-spring": "^8.0.19",
     "styled-components": "^4.2.0",
-    "tailwind.macro": "^0.5.10",
-    "tailwindcss": "^0.7.4",
+    "tailwind.macro": "^1.0.0-alpha.2",
+    "tailwindcss": "^1.0.0-beta.8",
     "typeface-cantata-one": "^0.0.72",
     "typeface-open-sans": "^0.0.54"
   },
