@@ -18,8 +18,8 @@ const Hero = ({ children, offset }) => (
   <>
     <Divider speed={0.2} offset={offset}>
       <UpDown>
-        <SVG icon="triangle" hiddenMobile width={48} stroke={colors.orange['400']} left="10%" top="20%" />
-        <SVG icon="hexa" width={48} stroke={colors.red['400']} left="60%" top="70%" />
+        <SVG icon="triangle" hiddenMobile width={48} stroke={colors.orange['500']} left="10%" top="20%" />
+        <SVG icon="hexa" width={48} stroke={colors.red['500']} left="60%" top="70%" />
         <SVG icon="box" width={6} fill={grayDarker} left="60%" top="15%" />
       </UpDown>
       <UpDownWide>
@@ -37,8 +37,8 @@ const Hero = ({ children, offset }) => (
       <SVG icon="upDown" width={8} fill={grayDarkest} left="95%" top="90%" />
       <SVG icon="upDown" hiddenMobile width={24} fill={grayDarker} left="40%" top="80%" />
       <SVG icon="triangle" width={8} stroke={grayDarker} left="25%" top="5%" />
-      <SVG icon="circle" width={64} fill={colors.green['400']} left="95%" top="5%" />
-      <SVG icon="box" hiddenMobile width={64} fill={colors.purple['400']} left="5%" top="90%" />
+      <SVG icon="circle" width={64} fill={colors.green['500']} left="95%" top="5%" />
+      <SVG icon="box" hiddenMobile width={64} fill={colors.purple['500']} left="5%" top="90%" />
       <SVG icon="box" width={6} fill={grayDarkest} left="10%" top="10%" />
       <SVG icon="box" width={12} fill={grayDarkest} left="40%" top="30%" />
       <SVG icon="hexa" width={16} stroke={grayDarker} left="10%" top="50%" />

@@ -10,20 +10,20 @@ import SVG from '../components/SVG'
 const { colors } = theme
 
 const grayDarkest = colors.gray['800']
-const orange = colors.orange['400']
+const orange = colors.orange['500']
 
 const About = ({ children, offset }) => (
   <>
     <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={offset} />
     <Divider speed={0.1} offset={offset}>
       <UpDown>
-        <SVG icon="box" hiddenMobile width={6} fill={colors.blue['400']} left="50%" top="75%" />
+        <SVG icon="box" hiddenMobile width={6} fill={colors.blue['500']} left="50%" top="75%" />
         <SVG icon="upDown" hiddenMobile width={8} fill={grayDarkest} left="70%" top="20%" />
         <SVG icon="triangle" width={8} stroke={grayDarkest} left="25%" top="5%" />
         <SVG icon="upDown" hiddenMobile width={24} fill={orange} left="80%" top="80%" />
       </UpDown>
       <UpDownWide>
-        <SVG icon="arrowUp" hiddenMobile width={16} fill={colors.purple['400']} left="5%" top="80%" />
+        <SVG icon="arrowUp" hiddenMobile width={16} fill={colors.purple['500']} left="5%" top="80%" />
         <SVG icon="triangle" width={12} stroke={colors.white} left="95%" top="50%" />
         <SVG icon="circle" width={6} fill={colors.white} left="85%" top="15%" />
         <SVG icon="upDown" hiddenMobile width={8} fill={grayDarkest} left="45%" top="10%" />

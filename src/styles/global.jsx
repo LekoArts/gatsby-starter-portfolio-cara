@@ -21,8 +21,12 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
   a {
-    color: #e07628;
+    color: #ED8936;
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    &:hover, :focus {
+      color: #F6AD55;
+    }
   }
 `
 

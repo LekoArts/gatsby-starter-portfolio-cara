@@ -14,7 +14,7 @@ const Wrapper = styled.a`
 `
 
 const Text = styled.div`
-  ${tw`opacity-75 font-sans text-sm md:text-base`};
+  ${tw`opacity-75 font-sans text-sm md:text-base text-white`};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 `
 
