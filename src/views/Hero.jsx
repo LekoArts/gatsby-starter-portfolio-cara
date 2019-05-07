@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
 import tw from 'tailwind.macro'
 import theme from 'tailwindcss/defaultTheme'
 import { Divider } from '../elements/Dividers'
@@ -13,9 +12,7 @@ const { colors } = theme
 const grayDarkest = colors.gray['800']
 const grayDarker = colors.gray['700']
 
-const Wrapper = styled.div`
-  ${tw`w-full xl:w-2/3`};
-`
+const Wrapper = tw.div`w-full xl:w-2/3`
 
 const Hero = ({ children, offset }) => (
   <>
