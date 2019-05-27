@@ -24,7 +24,7 @@
     "react-spring": "^8.0.20",
     "styled-components": "^4.2.0",
     "tailwind.macro": "^0.5.10",
-    "tailwindcss": "^0.7.4",
+    "tailwindcss": "^1.0.2",
     "typeface-cantata-one": "^0.0.72",
     "typeface-open-sans": "^0.0.54"
   },
