@@ -1,15 +1,18 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import PropTypes from 'prop-types'
-import { graphql, StaticQuery } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 import config from '../../config/website'
 
-const Head = props => {
-  const {
-    data: {
-      site: { buildTime },
-    },
-  } = props
+const SEO = () => {
+  const data = useStaticQuery(
+    graphql`
+      query SEO {
+        site {
+          buildTime(formatString: "YYYY-MM-DD")
+        }
+      }
+    `
+  )
 
   const title = config.siteTitle
   const description = config.siteDescription
@@ -49,7 +52,7 @@ const Head = props => {
       name: config.author,
     },
     datePublished: '2019-01-17',
-    dateModified: buildTime,
+    dateModified: data.site.buildTime,
     image: {
       '@type': 'ImageObject',
       url: image,
@@ -110,22 +113,4 @@ const Head = props => {
   )
 }
 
-Head.propTypes = {
-  data: PropTypes.shape({
-    site: PropTypes.shape({
-      buildTime: PropTypes.string.isRequired,
-    }),
-  }).isRequired,
-}
-
-const SEO = props => <StaticQuery query={querySEO} render={data => <Head {...props} data={data} />} />
-
 export default SEO
-
-const querySEO = graphql`
-  query SEO {
-    site {
-      buildTime(formatString: "YYYY-MM-DD")
-    }
-  }
-`
