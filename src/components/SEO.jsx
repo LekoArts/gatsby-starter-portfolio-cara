@@ -12,7 +12,7 @@ const SEO = () => {
         }
       }
     `
-  );
+  )
 
   const title = config.siteTitle
   const description = config.siteDescription
@@ -114,4 +114,3 @@ const SEO = () => {
 }
 
 export default SEO
-
