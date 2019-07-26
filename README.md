@@ -62,6 +62,7 @@ To copy and install this starter run this command (with "project-name" being the
 
 ```
 gatsby new project-name https://github.com/LekoArts/gatsby-starter-portfolio-cara
+npm install --save-dev babel-plugin-macros tailwind.macro
 cd project-name
 npm run dev
 ```
