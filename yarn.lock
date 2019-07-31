@@ -965,10 +965,10 @@
   dependencies:
     "@hapi/hoek" "8.x.x"
 
-"@lekoarts/gatsby-theme-cara@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@lekoarts/gatsby-theme-cara/-/gatsby-theme-cara-0.0.3.tgz#a8eb715dd211f2228e37b8833f980deddedca182"
-  integrity sha512-2LCZ6qBhURCnH0N2IGDqkw3nLnXeXq/fCNJwJSws2HsxONV1WD8dApn8Edfn0sOWJvmixzKtfytUZHVhXLvdag==
+"@lekoarts/gatsby-theme-cara@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@lekoarts/gatsby-theme-cara/-/gatsby-theme-cara-0.0.4.tgz#c8580e763cfec81109125f4d117f03c56e3ea2a4"
+  integrity sha512-zJ+vQEXRRb2GCoWtnAlid/DiMPfNcXb9cVQ0LRW0tsIwVtsOau+0Wno+DP5FFngCV/1ZSM5hdC/BZ0LmjcMS6w==
   dependencies:
     "@emotion/core" "^10.0.14"
     "@emotion/styled" "^10.0.14"
