@@ -1,145 +1,80 @@
-![](https://i.imgur.com/hWB1XRO.png)
+<p align="center">
+  <a href="https://cara.lekoarts.de">
+    <img alt="LekoArts" src="https://img.lekoarts.de/gatsby/gatsby-site-illustration.png" />
+  </a>
+</p>
+<h1 align="center">
+  Gatsby Starter Portfolio: Cara
+</h1>
 
-# Gatsby Starter Portfolio: Cara
+<p align="center">
+  <a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara/blob/master/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="Gatsby Starter Portfolio: Cara is released under the MIT license." />
+  </a>
+  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome!" />
+  <a href="https://twitter.com/intent/follow?screen_name=lekoarts_de">
+    <img src="https://img.shields.io/twitter/follow/lekoarts_de.svg?label=Follow%20@lekoarts_de" alt="Follow @lekoarts_de" />
+  </a>
+  <a href="https://app.netlify.com/sites/portfolio-cara/deploys">
+      <img src="https://api.netlify.com/api/v1/badges/88bbaef1-6f83-4894-8acd-e6512ff39265/deploy-status" alt="Netlify Status" />
+    </a>
+</p>
 
-A portfolio starter for [Gatsby](https://www.gatsbyjs.org/). The target audience are designers and photographers.
+Playful and Colorful One-Page portfolio featuring Parallax effects and animations. Using the Gatsby Theme [`@lekoarts/gatsby-theme-cara`](https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-cara).
 
-[Demo Website](https://cara.lekoarts.de)
+[**Demo Website**](https://cara.lekoarts.de)
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LeKoArts/gatsby-starter-portfolio-cara) [![Edit gatsby-starter-portfolio-cara](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/LeKoArts/gatsby-starter-portfolio-cara/tree/master/)
+Also be sure to checkout other [Free & Open Source Gatsby Themes](https://themes.lekoarts.de)
 
-[![CircleCI](https://circleci.com/gh/LekoArts/gatsby-starter-portfolio-cara.svg?style=svg)](https://circleci.com/gh/LekoArts/gatsby-starter-portfolio-cara) [![Netlify Status](https://api.netlify.com/api/v1/badges/88bbaef1-6f83-4894-8acd-e6512ff39265/deploy-status)](https://app.netlify.com/sites/portfolio-cara/deploys)
+## ✨ Features
 
-- TailwindCSS & styled-components
-- React Spring
-- Playful & Colorful One-Page website with Parallax effect
+- Theme UI-based theming
+- react-spring parallax effect
+- CSS Animations on Shapes
 
-Thanks to [@bradlc](https://github.com/bradlc)’s work on [babel-plugin-tailwind-components](https://github.com/bradlc/babel-plugin-tailwind-components), we can easily get the power of Tailwind without the stylesheet bloat by passing Tailwind classes into styled-components with **Babel macros** 🎉.
+## 🚀 Getting Started
 
-## Why?
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LekoArts/gatsby-starter-portfolio-cara) [![Edit gatsby-starter-portfolio-cara](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/LekoArts/gatsby-starter-portfolio-cara/tree/master/)
 
-If you want to quickly bootstrap a design/photography portfolio or use it as a foundation for your personal site, the starters in _gatsby-starter-portfolio_ are a perfect fit for you! The project's goal is to offer minimalistic and fast websites.
+1. **Create a Gatsby site.**
 
-I hope you like my starters and create something awesome! To see some of my work, you can visit my [website](https://www.lekoarts.de) or support me on [Patreon](https://www.patreon.com/lekoarts) to get some neat rewards (4K images, project files, tutorial insights). Every pledge on Patreon helps me create more free starters!
+Use the Gatsby CLI to create a new site, specifying this project
 
-Also, check out the other starters for _gatsby-starter-portfolio_:
-
-- [gatsby-starter-portfolio-emma](https://github.com/LekoArts/gatsby-starter-portfolio-emma)
-- [gatsby-starter-portfolio-emilia](https://github.com/LekoArts/gatsby-starter-portfolio-emilia)
-- [gatsby-starter-portfolio-bella](https://github.com/LekoArts/gatsby-starter-portfolio-bella)
-- [gatsby-starter-portfolio-jodie](https://github.com/LekoArts/gatsby-starter-portfolio-jodie)
-
-Check out the [Gatsby Starter Portfolio Overview](https://gatsby-starter-portfolio.netlify.com/)!
-
-## Features
-
-- [React Spring](https://github.com/drcmda/react-spring) (Used for Parallax effect)
-- [TailwindCSS](https://tailwindcss.com/) & [styled-components](https://www.styled-components.com/) for styling
-  - Use the full power of TailwindCSS while generating small styles (as unused data gets deleted)
-  - Uses `tailwind.macro` (Babel macro) to have hot-reloading of Tailwind styles
-- SEO
-  - Schema.org JSONLD
-  - OpenGraph Tags
-  - Twitter Tags
-- [Typefaces](https://github.com/KyleAMathews/typefaces) for quicker font loading
-- Offline Support
-- WebApp Manifest Support
-- Responsive images
-  - The right image size for every screen size
-  - Traced SVG Loading (Lazy-Loading)
-  - WebP Support
-
-**Please note:** The parallax effect can be quite heavy for some older CPUs and the site uses some newer CSS features which will result in incompatibility with older browsers.
-
-## Getting Started
-
-Check your development environment! You'll need [Node.js](https://nodejs.org/en/), the [Gatsby CLI](https://www.gatsbyjs.org/docs/) and [node-gyp](https://github.com/nodejs/node-gyp#installation) installed. The official Gatsby website also lists two articles regarding this topic:
-
-- [Gatsby on Windows](https://www.gatsbyjs.org/docs/gatsby-on-windows/)
-- [Check your development environment](https://www.gatsbyjs.org/tutorial/part-zero/)
-
-To copy and install this starter run this command (with "project-name" being the name of your folder you wish to install it in):
-
-```
+```sh
 gatsby new project-name https://github.com/LekoArts/gatsby-starter-portfolio-cara
+```
+
+2. **Start developing.**
+
+Navigate into your new site's directory and start it up.
+
+```sh
 cd project-name
-npm run dev
+gatsby develop
 ```
 
-### Adding new features/plugins
+3. **Open the code and start customizing!**
 
-You can add other features by having a look at the official [plugins page](https://www.gatsbyjs.org/docs/plugins/).
+Your site is now running at `http://localhost:8000`!
 
-### Building your site
+If you want to learn more about how you can use a Gatsby starter that is configured with a Gatsby theme, you can checkout this [shorter](https://www.gatsbyjs.org/docs/themes/using-a-gatsby-theme/) or [longer](https://www.gatsbyjs.org/tutorial/using-a-theme/) tutorial. The tutorials don't exactly apply to this starter however the concepts are the same.
 
-```
-npm run build
-```
+## 📝 Using and modifying this starter
 
-Copy the content of the `public` folder to your webhost or use a website like Netlify which automates that for you.
+This starter creates a new Gatsby site that installs and configures the theme [`@lekoarts/gatsby-theme-cara`](https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-cara).
 
-## Configuration
+Please have a look at the theme's README and files to see what options are available and how you can shadow the various components including Theme UI.
 
-You have multiple options to configure this project.
+## 🎓 Learning Gatsby
 
-1. Use the `config/website.js` to configure data passed to the SEO component and other parts of the Gatsby site:
+Looking for more guidance? Full documentation for Gatsby lives [on Gatsby's website](https://www.gatsbyjs.org/).
 
-```JS
-module.exports = {
-  pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "/portfolio"
+### Themes
 
-  siteTitle: 'Cara - Gatsby Starter Portfolio', // Navigation and Site Title
-  siteTitleAlt: 'Cara', // Alternative Site title for SEO
-  siteTitleShort: 'Cara', // short_name for manifest
-  siteHeadline: 'Creating marvelous art & blazginly fast websites', // Headline for schema.org JSONLD
-  siteUrl: 'https://cara.lekoarts.de', // Domain of your site. No trailing slash!
-  siteLanguage: 'en', // Language Tag on <html> element
-  siteLogo: '/logo.png', // Used for SEO and manifest
-  siteDescription: 'Playful & Colorful One-Page website with Parallax effect',
-  author: 'LekoArts', // Author for schema.org JSONLD
+- To learn more about Gatsby themes specifically, we recommend checking out the [theme docs](https://www.gatsbyjs.org/docs/themes/).
 
-  // siteFBAppID: '123456789', // Facebook App ID - Optional
-  userTwitter: '@cara', // Twitter Username
-  ogSiteName: 'cara', // Facebook Site Name
-  ogLanguage: 'en_US', // Facebook Language
+### General
 
-  // Manifest and Progress color
-  themeColor: tailwind.colors.orange,
-  backgroundColor: tailwind.colors.blue,
-}
-```
+- **For most developers, I recommend starting with the [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
-2. Use the `tailwind.js` file to configure TailwindCSS. Their [documentation](https://tailwindcss.com/docs/configuration) explains it step-by-step.
-
-3. Modify the files in the `src/styles` directory.
-
-4. Modify the sections in the `src/views` directory. They contain the Dividers & SVG icons.
-
-5. You can also place the icons somewhere else on the page, modify their animation and hide them on smaller screens:
-
-```JSX
-  <SVG icon="triangle" hideMobile width={48} stroke={colors.orange} left="10%" top="20%" />
-  <SVG icon="hexa" width={48} stroke={colors.red} left="60%" top="70%" />
-  <SVG icon="box" width={6} fill={colors['grey-darker']} left="60%" top="15%" />
-```
-
-- For `icon`, you have the options: `triangle, circle, arrowUp, upDown, box, hexa, cross`
-- If you want the SVG to be hidden on mobile view, add `hideMobile` to the SVG component
-- You can define the width via the TailwindCSS width [option](https://tailwindcss.com/docs/width)
-- The colors get defined via the TailwindCSS color [option](https://tailwindcss.com/docs/colors)
-  - Please note that you will either have to define the color in `stroke` **or** `fill` depending on the icon. For reference, have a look at the currently used SVGs
-- The options `left` and `top` position the icon relatively to its parent container
-- You can also wrap the SVGs with `<UpDown />` or `<UpDownWide />` to animate them
-
-### Typography
-
-Instead of relying on Google's CDN to host its fonts, this site self-hosts the fonts and therefore benefits from increased performance. The installed fonts can be found in `src/components/Layout.jsx`:
-
-```JSX
-import 'typeface-cantata-one';
-import 'typeface-open-sans';
-```
-
-This starter uses [typefaces](https://github.com/KyleAMathews/typefaces) by Kyle Mathews. Have a look at the repository if you want to install & use other fonts.
-
-You'll also need to configure `fonts` in `tailwind.js` to reflect the changes. You then can use the fonts with `font-sans` and `font-serif`.
+- **To dive straight into code samples, head [to Gatsby's documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Reference Guides_ and _Gatsby API_ sections in the sidebar.

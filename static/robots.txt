@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-sitemap: https://cara.lekoarts.de/sitemap.xml
