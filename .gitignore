@@ -1,8 +1,9 @@
-### Node ###
 # Logs
 logs
 *.log
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Runtime data
 pids
@@ -22,6 +23,9 @@ coverage
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
+# Bower dependency directory (https://bower.io/)
+bower_components
+
 # node-waf configuration
 .lock-wscript
 
@@ -31,7 +35,9 @@ build/Release
 # Dependency directories
 node_modules
 jspm_packages
-.idea
+
+# Typescript v1 declaration files
+typings/
 
 # Optional npm cache directory
 .npm
@@ -48,15 +54,14 @@ jspm_packages
 # Yarn Integrity file
 .yarn-integrity
 
+# dotenv environment variables file
+.env
+.env.*
+!.env.example
 
-# Build Files
-public/
-.cache/
+.cache
+public
 
-# Gatsby context
-.gatsby-context.js
-
-# Bundle stats
-bundle-stats.json
-
-tailwind.custom.css
+.idea
+.vscode
+.DS_Store

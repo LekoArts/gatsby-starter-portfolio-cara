@@ -1,57 +1,47 @@
-const config = require('./config/website')
-
-const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
+require(`dotenv`).config({
+  path: `.env`,
+})
 
 module.exports = {
-  /* General Information */
   siteMetadata: {
-    siteUrl: config.siteUrl + pathPrefix,
+    siteTitleAlt: `Cara - Gatsby Starter Portfolio`,
   },
-  /* Plugins */
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-styled-components',
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `@lekoarts/gatsby-theme-cara`,
+      options: {},
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
-        path: `${__dirname}/src/images/`,
-        name: 'images',
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
       },
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        trackingId: config.googleAnalyticsID,
-      },
-    },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: config.siteTitle,
-        short_name: config.siteTitleShort,
-        description: config.siteDescription,
-        start_url: config.pathPrefix,
-        background_color: config.backgroundColor,
-        theme_color: config.themeColor,
-        display: 'standalone',
+        name: `Cara - @lekoarts/gatsby-theme-cara`,
+        short_name: `Cara`,
+        description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+        start_url: `/`,
+        background_color: `#141821`,
+        theme_color: `#f6ad55`,
+        display: `standalone`,
         icons: [
           {
-            src: '/favicons/android-chrome-192x192.png',
-            sizes: '192x192',
-            type: 'image/png',
+            src: `/android-chrome-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
           },
           {
-            src: '/favicons/android-chrome-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
+            src: `/android-chrome-512x512.png`,
+            sizes: `512x512`,
+            type: `image/png`,
           },
         ],
       },
     },
-    /* Must be placed at the end */
-    'gatsby-plugin-offline',
-    'gatsby-plugin-netlify',
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-netlify`,
   ],
 }
