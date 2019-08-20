@@ -4,7 +4,6 @@ jobs:
   autoClose:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
     - name: Auto Close
       uses: superbrothers/auto-close-action@master
       env:
