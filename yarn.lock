@@ -814,7 +814,7 @@
     "@emotion/utils" "0.11.2"
     "@emotion/weak-memoize" "0.2.3"
 
-"@emotion/core@^10.0.15":
+"@emotion/core@^10.0.16":
   version "10.0.16"
   resolved "https://registry.yarnpkg.com/@emotion/core/-/core-10.0.16.tgz#e43630b65c84e31e81f34db3286eab584b08cfaa"
   integrity sha512-whbiiA7FfPreBY4BqWky2qRfAZvq+4dKQ1WNJuiYQwPCNmb0pEYDgNheSbZoNKtGTtfPaM28hBbZAKWD5EZXmQ==
@@ -960,27 +960,27 @@
   dependencies:
     "@hapi/hoek" "8.x.x"
 
-"@lekoarts/gatsby-theme-cara@^0.0.9":
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/@lekoarts/gatsby-theme-cara/-/gatsby-theme-cara-0.0.9.tgz#39f5648d597fe83324057dd3528fb0b1da1f51e9"
-  integrity sha512-XoIBQ+AU1AyyjFume2zlLkJZnP3Yi1taw+O821gmb9yO/VU8whlAmApuFw8ciDhXPDOU01iXRQdDLgl4ZxdG6g==
+"@lekoarts/gatsby-theme-cara@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@lekoarts/gatsby-theme-cara/-/gatsby-theme-cara-0.0.10.tgz#182360407d3e876c5254a139c5f9f980168b724d"
+  integrity sha512-mLGM9k5I4f+C2WWzeBBkvJ7RujHOxLZ6Cw8f+AVvRlIytvGgkBJv5cZ4gEYfOdu4y7J4Debeepxa+/J6vAwp7Q==
   dependencies:
-    "@emotion/core" "^10.0.15"
+    "@emotion/core" "^10.0.16"
     "@emotion/styled" "^10.0.15"
-    "@mdx-js/mdx" "^1.2.2"
-    "@mdx-js/react" "^1.2.2"
-    "@theme-ui/presets" "^0.2.30"
-    gatsby-plugin-emotion "^4.1.2"
-    gatsby-plugin-mdx "^1.0.23"
-    gatsby-plugin-react-helmet "^3.1.3"
-    gatsby-plugin-theme-ui "^0.2.29"
-    gatsby-plugin-typescript "^2.1.2"
-    gatsby-source-filesystem "^2.1.9"
+    "@mdx-js/mdx" "^1.3.1"
+    "@mdx-js/react" "^1.3.1"
+    "@theme-ui/presets" "^0.2.34"
+    gatsby-plugin-emotion "^4.1.3"
+    gatsby-plugin-mdx "^1.0.25"
+    gatsby-plugin-react-helmet "^3.1.4"
+    gatsby-plugin-theme-ui "^0.2.34"
+    gatsby-plugin-typescript "^2.1.3"
+    gatsby-source-filesystem "^2.1.10"
     react-helmet "^5.2.1"
     react-spring "^8.0.27"
-    theme-ui "^0.2.31"
+    theme-ui "^0.2.35"
 
-"@mdx-js/mdx@^1.2.2":
+"@mdx-js/mdx@^1.3.1":
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/@mdx-js/mdx/-/mdx-1.3.1.tgz#6da8137e29f1a3430fdfcba49fdadc8214f2e8af"
   integrity sha512-mLP4iN6OhDnA9IqAiKAFb/wSnmwU1Mb9gy0szzV0QbDHtlinmzQmK2YyEv9Stf8NXvWbsNVTj9p3hy01nZY9yA==
@@ -1004,7 +1004,7 @@
     unist-builder "1.0.4"
     unist-util-visit "2.0.0"
 
-"@mdx-js/react@^1.2.2":
+"@mdx-js/react@^1.3.1":
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/@mdx-js/react/-/react-1.3.1.tgz#5694f1af2d8423f19710db0c8dcef51316f073fc"
   integrity sha512-HwpA0r4XiydiUXceAtzguLs3FH8Jbfpgoff3L+pejemiqyxol/FYMxwMu0WcBxti5eJYBqZEwL+C5od6OsS7Gw==
@@ -1126,7 +1126,7 @@
   resolved "https://registry.yarnpkg.com/@theme-ui/preset-tosh/-/preset-tosh-0.2.29.tgz#26edc35ae321f05d62bb7eef3cbbc56e33fbac13"
   integrity sha512-4HSdziukKqCC0tR3VfHun8pTnLOQYXFYeP8MWjvjLaIHEd/E1p0rwunGg5LX22/Tj4ri5UUWadAxOvkDn+U+wQ==
 
-"@theme-ui/presets@^0.2.30":
+"@theme-ui/presets@^0.2.34":
   version "0.2.34"
   resolved "https://registry.yarnpkg.com/@theme-ui/presets/-/presets-0.2.34.tgz#564279dd3dbd1a8a2ae72ac9e83f92fcc6e33f12"
   integrity sha512-rhnTL51N1GZmDfSozlhlBEBCuYq4BleHjyA8fOQl6xIyNN1xjZXgr1vuJmPlU2hG6sUXGHXOIh/q7kqMTRVdsA==
@@ -4806,7 +4806,7 @@ gatsby-page-utils@^0.0.6:
     micromatch "^3.1.10"
     slash "^1.0.0"
 
-gatsby-plugin-emotion@^4.1.2:
+gatsby-plugin-emotion@^4.1.3:
   version "4.1.3"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-4.1.3.tgz#a570e300a8ee6d76d24453e5d7cb29952bf18703"
   integrity sha512-MvOSlLaIU39xNz31Yxjwra3SgU7TaMY3fYALWF/hPK9SU5CSuXyQTXdsd/gGPqGQQYgdIsFIWwy//uP98fjtBQ==
@@ -4831,7 +4831,7 @@ gatsby-plugin-manifest@^2.2.6:
     semver "^5.6.0"
     sharp "^0.22.1"
 
-gatsby-plugin-mdx@^1.0.23:
+gatsby-plugin-mdx@^1.0.25:
   version "1.0.25"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-1.0.25.tgz#e2402226059ead2fc242c048d584e7834a468082"
   integrity sha512-v2hUTwT6pwfaCiV3dqRggHiotMzWfyr7xBUXJF3VT1BW++NCtqq1oDCX2W35F/z6GoDRaKJ7CzLysF8ImzdZVg==
@@ -4908,19 +4908,19 @@ gatsby-plugin-page-creator@^2.1.6:
     lodash "^4.17.14"
     micromatch "^3.1.10"
 
-gatsby-plugin-react-helmet@^3.1.3:
+gatsby-plugin-react-helmet@^3.1.4:
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-3.1.4.tgz#cea67aa21721c82e6066c04f71aa0cecfebec0ce"
   integrity sha512-L+nP4cv6zdxjKXN9eJJdni7JpPCCSN1V+KWBgID0FELKawFGegkI6zdvKhtBZHz5F+WHh+ak/qfOAYIuLO0eHA==
   dependencies:
     "@babel/runtime" "^7.0.0"
 
-gatsby-plugin-theme-ui@^0.2.29:
+gatsby-plugin-theme-ui@^0.2.34:
   version "0.2.34"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.2.34.tgz#bbc5af48849ff4be88cd9ef6b66439768da80966"
   integrity sha512-y9QrtMEhalB1mJ7E0y8UW9sffrTJ4W/dj0631k0LfUxEeKs2gA3VJf4yuJ+MOu4RloE9XDC04csM6zOy0tz7kA==
 
-gatsby-plugin-typescript@^2.1.2:
+gatsby-plugin-typescript@^2.1.3:
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-2.1.3.tgz#26a94d88e58750f5290609f59a5cff1f27c0a13b"
   integrity sha512-Zad2WoIcNpzlEVMFFwP1tEa8tqq3qA2bP4ATs+ygapjFZPRGwCS44cUL6kAFQfZ2EjfGG2qRi9Ew7MMkS5+i6w==
@@ -4938,7 +4938,7 @@ gatsby-react-router-scroll@^2.1.4:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby-source-filesystem@^2.1.9:
+gatsby-source-filesystem@^2.1.10:
   version "2.1.10"
   resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.1.10.tgz#6a9f7f17dfd6d6ad3390508e61621d9fb464f9e5"
   integrity sha512-701d96rvwkwxB1exE1vOR+QxAn3hl6rWPl8lQCcmlCUP9+Xp6IyL1jApjt99hqxqZxmXRUdrDQoS2ALRPALtQw==
@@ -10573,7 +10573,7 @@ text-table@0.2.0, text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
-theme-ui@^0.2.31:
+theme-ui@^0.2.35:
   version "0.2.35"
   resolved "https://registry.yarnpkg.com/theme-ui/-/theme-ui-0.2.35.tgz#6f953086878e2746298f38272e8cbb6344d3acff"
   integrity sha512-NJJEtnLogIULuwL/dF15kfv+97ZR/rWFLccrR60iGCj6j8hk4krqO+g573hV4bowDorCFPA4yQb0HHZbm+1P1g==
