@@ -31,6 +31,7 @@ Also be sure to checkout other [Free & Open Source Gatsby Themes](https://themes
 - Theme UI-based theming
 - react-spring parallax effect
 - CSS Animations on Shapes
+- Light/Dark Mode
 
 ## 🚀 Getting Started
 
