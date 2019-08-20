@@ -9,4 +9,4 @@ jobs:
       uses: superbrothers/auto-close-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        COMMENT: Hi! Thank you for your PR. This repository is managed by https://github.com/LekoArts/gatsby-themes and changes just get copied over. Please reopen your PR there. Thanks again!
+        COMMENT: "Hi! Thank you for your PR. This repository is managed by https://github.com/LekoArts/gatsby-themes and changes just get copied over. Please reopen your PR there. Thanks again!"
