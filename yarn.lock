@@ -3866,9 +3866,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.3.191, electron-to-chromium@^1.3.47:
-  version "1.3.243"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.243.tgz#32f64f00fa121532d1d49f5c0a15fd77f52ae889"
-  integrity sha512-+edFdHGxLSmAKftXa5xZIg19rHkkJLiW+tRu0VMVG3RKztyeKX7d3pXf707lS6+BxB9uBun3RShbxCI1PtBAgQ==
+  version "1.3.244"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.244.tgz#7ba5461fa320ab16540a31b1d0defb7ec29b16e4"
+  integrity sha512-nEfPd2EKnFeLuZ/+JsRG3KixRQwWf2SPpp09ftNt5ouGhg408N759+oXvdXy57+TcM34ykfJYj2JMkc1O3R0lQ==
 
 elliptic@^6.0.0:
   version "6.5.0"
@@ -4331,11 +4331,6 @@ execa@^1.0.0:
     p-finally "^1.0.0"
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
-
-exenv@^1.2.1:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/exenv/-/exenv-1.2.2.tgz#2ae78e85d9894158670b03d47bec1f03bd91bb9d"
-  integrity sha1-KueOhdmJQVhnCwPUe+wfA72Ru50=
 
 expand-brackets@^2.1.4:
   version "2.1.4"
@@ -4880,10 +4875,10 @@ gatsby-graphiql-explorer@^0.2.8:
   dependencies:
     "@babel/runtime" "^7.5.5"
 
-gatsby-link@^2.2.9:
-  version "2.2.9"
-  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-2.2.9.tgz#dd0e6feeb44b065cb9c88b75900c47c4276176b9"
-  integrity sha512-xRluDXrt4DJOxNWcf308YQuNpZ9ASRoAugCZfr7CmPQ5Kii93moR2fDWz50DOl8ueuspuEexh6rZzKTatEiHMQ==
+gatsby-link@^2.2.10:
+  version "2.2.10"
+  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-2.2.10.tgz#da7395eec2e9d1185bd9f1ba19bbfee7f50d560c"
+  integrity sha512-xZ7bc1Ck+WwwgDoAOclZ4QllRfr7GYapswq+oAe7AjR8fCOyRrcJx8olRx+x9qKgOh34f59jjX/bWDUeFWfInw==
   dependencies:
     "@babel/runtime" "^7.5.5"
     "@types/reach__router" "^1.2.4"
@@ -4912,9 +4907,9 @@ gatsby-plugin-emotion@^4.1.3:
     "@emotion/babel-preset-css-prop" "^10.0.14"
 
 gatsby-plugin-google-analytics@^2.1.8:
-  version "2.1.11"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.1.11.tgz#c7b3ed6db9f4b79b3763f73ff03d9b8e1e7a9f03"
-  integrity sha512-kutKpfz31iZ/p3R7SE3b/1J10FodxSB8RJTNNKe6Gyolx75Nki+SmunpQGvOTN7bKPBo6EY3wVqxU5U62Yt7DA==
+  version "2.1.12"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.1.12.tgz#a31950e95106d0c6947a96a6e072e524e9f9cdc3"
+  integrity sha512-MenBMjzW4Ck8ane2Rk5131+DlVk1MpOz20x3woJb+LIFu7oAevSrDKK9P2+5U58p+suSMRbeRPkUXR27rIflYg==
   dependencies:
     "@babel/runtime" "^7.5.5"
 
@@ -5080,9 +5075,9 @@ gatsby-telemetry@^1.1.19:
     uuid "3.3.3"
 
 gatsby@^2.13.72:
-  version "2.14.0"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.14.0.tgz#ff5e19e6d8dfedbd1c3e41fc10e2f55bd8372ede"
-  integrity sha512-nZTXaC8HvfQTs9vOh1iVtY07c4AD6zrwtqIxttsyDfGVIRas47rvPCyPisUEVX6Hzk0W+cabEJ1T5cnZvi4ANA==
+  version "2.14.3"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.14.3.tgz#8af133ed158753fc9201e637b49c54f723f40bae"
+  integrity sha512-U646Xh9nX1LXErKpvEUKBJhcCGSNC2+VCMd6cLJ48e0b9fXHZx71+9u+iuZirSXodBO9K+tOZZI6yx3pr/iGnw==
   dependencies:
     "@babel/code-frame" "^7.5.5"
     "@babel/core" "^7.5.5"
@@ -5147,7 +5142,7 @@ gatsby@^2.13.72:
     gatsby-cli "^2.7.40"
     gatsby-core-utils "^1.0.6"
     gatsby-graphiql-explorer "^0.2.8"
-    gatsby-link "^2.2.9"
+    gatsby-link "^2.2.10"
     gatsby-plugin-page-creator "^2.1.12"
     gatsby-react-router-scroll "^2.1.6"
     gatsby-telemetry "^1.1.19"
@@ -5183,11 +5178,12 @@ gatsby@^2.13.72:
     pnp-webpack-plugin "^1.5.0"
     postcss-flexbugs-fixes "^3.3.1"
     postcss-loader "^2.1.6"
+    prompts "^2.2.1"
     prop-types "^15.7.2"
     raw-loader "^0.5.1"
     react-dev-utils "^4.2.3"
     react-error-overlay "^3.0.0"
-    react-hot-loader "^4.12.11"
+    react-hot-loader "^4.12.12"
     redux "^4.0.4"
     redux-thunk "^2.3.0"
     semver "^5.7.1"
@@ -5206,11 +5202,11 @@ gatsby@^2.13.72:
     util.promisify "^1.0.0"
     uuid "^3.3.3"
     v8-compile-cache "^1.1.2"
-    webpack "~4.39.2"
+    webpack "~4.39.3"
     webpack-dev-middleware "^3.7.0"
     webpack-dev-server "^3.8.0"
     webpack-hot-middleware "^2.25.0"
-    webpack-merge "^4.2.1"
+    webpack-merge "^4.2.2"
     webpack-stats-plugin "^0.3.0"
     xstate "^4.6.7"
     yaml-loader "^0.5.0"
@@ -7494,9 +7490,9 @@ minimist@^1.2.0:
   integrity sha1-o1AIsg9BOD7sH7kU9M1d95omQoQ=
 
 minipass@^2.2.1, minipass@^2.3.5:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/minipass/-/minipass-2.4.0.tgz#38f0af94f42fb6f34d3d7d82a90e2c99cd3ff485"
-  integrity sha512-6PmOuSP4NnZXzs2z6rbwzLJu/c5gdzYg1mRI/WIYdx45iiX7T+a4esOzavD6V/KmBzAaopFSTZPZcUx73bqKWA==
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/minipass/-/minipass-2.5.0.tgz#dddb1d001976978158a05badfcbef4a771612857"
+  integrity sha512-9FwMVYhn6ERvMR8XFdOavRz4QK/VJV8elU1x50vYexf9lslDcWe/f4HBRxCPd185ekRSjU6CfYyJCECa/CQy7Q==
   dependencies:
     safe-buffer "^5.1.2"
     yallist "^3.0.0"
@@ -9241,7 +9237,7 @@ react-helmet@^5.2.1:
     react-fast-compare "^2.0.2"
     react-side-effect "^1.1.0"
 
-react-hot-loader@^4.12.11:
+react-hot-loader@^4.12.12:
   version "4.12.12"
   resolved "https://registry.yarnpkg.com/react-hot-loader/-/react-hot-loader-4.12.12.tgz#8b33f59efef8a34f64e01f0d9393230d4b4bc6d4"
   integrity sha512-Tkd412j5yPKHoTRsJzZb+5UJNFKkPszm7QGKGYvt+jnzTkDS+qK0u3AYPlB0MmBlwzUKVHICqq5KH9Srzda7XA==
@@ -9276,11 +9272,10 @@ react-reconciler@^0.20.0:
     scheduler "^0.13.6"
 
 react-side-effect@^1.1.0:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-1.1.5.tgz#f26059e50ed9c626d91d661b9f3c8bb38cd0ff2d"
-  integrity sha512-Z2ZJE4p/jIfvUpiUMRydEVpQRf2f8GMHczT6qLcARmX7QRb28JDBTpnM2g/i5y/p7ZDEXYGHWg0RbhikE+hJRw==
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-1.2.0.tgz#0e940c78faba0c73b9b0eba9cd3dda8dfb7e7dae"
+  integrity sha512-v1ht1aHg5k/thv56DRcjw+WtojuuDHFUgGfc+bFHOWsF4ZK6C2V57DO0Or0GPsg6+LSTE0M6Ry/gfzhzSwbc5w==
   dependencies:
-    exenv "^1.2.1"
     shallowequal "^1.0.1"
 
 react-spring@^8.0.27:
@@ -11584,7 +11579,7 @@ webpack-log@^2.0.0:
     ansi-colors "^3.0.0"
     uuid "^3.3.2"
 
-webpack-merge@^4.2.1:
+webpack-merge@^4.2.2:
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/webpack-merge/-/webpack-merge-4.2.2.tgz#a27c52ea783d1398afd2087f547d7b9d2f43634d"
   integrity sha512-TUE1UGoTX2Cd42j3krGYqObZbOD+xF7u28WB7tfUordytSjbWTIjK/8V0amkBfTYN4/pB/GIDlJZZ657BGG19g==
@@ -11612,7 +11607,7 @@ webpack-stats-plugin@^0.3.0:
   resolved "https://registry.yarnpkg.com/webpack-stats-plugin/-/webpack-stats-plugin-0.3.0.tgz#6952f63feb9a5393a328d774fb3eccac78d2f51b"
   integrity sha512-4a6mEl9HLtMukVjEPY8QPCSmtX2EDFJNhDTX5ZE2CLch2adKAZf53nUrpG6m7NattwigS0AodNcwNxlu9kMSDQ==
 
-webpack@~4.39.2:
+webpack@~4.39.3:
   version "4.39.3"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.39.3.tgz#a02179d1032156b713b6ec2da7e0df9d037def50"
   integrity sha512-BXSI9M211JyCVc3JxHWDpze85CvjC842EvpRsVTc/d15YJGlox7GIDd38kJgWrb3ZluyvIjgenbLDMBQPDcxYQ==
