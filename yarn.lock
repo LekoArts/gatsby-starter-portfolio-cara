@@ -960,7 +960,7 @@
   dependencies:
     "@hapi/hoek" "8.x.x"
 
-"@lekoarts/gatsby-theme-cara@^1.0.1":
+"@lekoarts/gatsby-theme-cara@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@lekoarts/gatsby-theme-cara/-/gatsby-theme-cara-1.0.2.tgz#74ca4adcc64ba78f1c563b1376531e7e4f0b863a"
   integrity sha512-7PzyVfVEcRU18P7Bx5EZ2LqE3aa8Ng8edzH8tnXbE1zOouWZcBQ6ICJAqwhKA3JM+kkq74dkeD2gUf0+Qx+HaQ==
