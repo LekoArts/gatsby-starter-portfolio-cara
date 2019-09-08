@@ -964,9 +964,9 @@
   integrity sha512-1dVNHT76Uu5N3eJNTYcvxee+jzX4Z9lfciqRRHCU27ihbUcYi+iSc2iml5Ke1LXe1SyJCLA0+14Jh4tXJgOppA==
 
 "@hapi/hoek@8.x.x":
-  version "8.2.2"
-  resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-8.2.2.tgz#6eaa2e1ec3b50dfb8dccbe705dc289094652bc2d"
-  integrity sha512-18P3VwngjNEcmvPj1mmiHLPyUPjhPAxIyJKDj4PRIY0F5ac3P0Vd0hkASPyWXHK0rfY3P9N2FoxV8ZuYaRBZ1g==
+  version "8.2.3"
+  resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-8.2.3.tgz#7ffcb10d9609be5eeb96521b62941653da264b28"
+  integrity sha512-rvgNiuJU19K/YmVJ4nvDPstqs2C7NSA1+ApAFgTSVvfGahzlwRqu0S0dnyWEDhEvgO40E5phUyZi/MZ6vEUKcQ==
 
 "@hapi/joi@^15.1.1":
   version "15.1.1"
