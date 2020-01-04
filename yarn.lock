@@ -1009,10 +1009,10 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
-"@lekoarts/gatsby-theme-cara@^1.0.15":
-  version "1.0.15"
-  resolved "https://registry.yarnpkg.com/@lekoarts/gatsby-theme-cara/-/gatsby-theme-cara-1.0.15.tgz#10bea9e7850adb159ec78dc3e0ad627091c7e040"
-  integrity sha512-C6P7fEeaBZMQrxi9Kyo5Uyxm0UneqqeJiNeYd3+gBYNd59dMaKdaLCDawwS1NlRQl+ggEP7tiM+RsQxQ/oR10w==
+"@lekoarts/gatsby-theme-cara@^1.0.16":
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/@lekoarts/gatsby-theme-cara/-/gatsby-theme-cara-1.0.16.tgz#e81ca5f552f333428c019fe1e7122a981ce2ef90"
+  integrity sha512-CcBj9IhvMHCO7hsG6eSXCQuIkZMePhGMTGrf+G30S5XIamAfiTYzHFCtesFo3FQ3KDKpDzlBIpn3bgQ4oMDsAA==
   dependencies:
     "@emotion/core" "^10.0.27"
     "@emotion/styled" "^10.0.27"
