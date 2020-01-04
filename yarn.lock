@@ -8685,9 +8685,9 @@ physical-cpu-count@^2.0.0:
   integrity sha1-GN4vl+S/epVRrXURlCtUlverpmA=
 
 picomatch@^2.0.4, picomatch@^2.0.5:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.1.1.tgz#ecdfbea7704adb5fe6fb47f9866c4c0e15e905c5"
-  integrity sha512-OYMyqkKzK7blWO/+XZYP6w8hH0LDvkBvdvKukti+7kqYFCiEAk+gI3DWnryapc0Dau05ugGTy0foQ6mqn4AHYA==
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.2.0.tgz#e16e8587cb70cb515a698ee4a0f2df1edb0c9aa3"
+  integrity sha512-Gskshv+376q+hmJbbOiMK+Jtv3bNkwnoOtVSPkcSrvsu9WuKJvBXOcSlBkWgWE0+A011wfafeWpiDrdbowddfg==
 
 pify@^2.0.0:
   version "2.3.0"
