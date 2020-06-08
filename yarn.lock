@@ -1360,25 +1360,25 @@
   resolved "https://registry.yarnpkg.com/@kwsites/exec-p/-/exec-p-0.4.0.tgz#ab3765d482849ba6e825721077c248cf9f3323b7"
   integrity sha512-44DWNv5gDR9EwrCTVQ4ZC99yPqVS0VCWrYIBl45qNR8XQy+4lbl0IQG8kBDf6NHwj4Ib4c2z1Fq1IUJOCbkZcw==
 
-"@lekoarts/gatsby-theme-cara@^1.2.5":
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/@lekoarts/gatsby-theme-cara/-/gatsby-theme-cara-1.2.5.tgz#8079f9d4da59694644e3d15904a4860b9eedf3ba"
-  integrity sha512-i5XkD/byir/u5PKIJSBAi02VhSu6Bd3OaKCn3gb/tirq1wS+xM4tTL07qVhVY6NvbFCQ/vBaoIVInrl6rubUnQ==
+"@lekoarts/gatsby-theme-cara@^1.2.6":
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@lekoarts/gatsby-theme-cara/-/gatsby-theme-cara-1.2.6.tgz#65d22ca3d9ed03a55cdfeb4df7dc07455f1e21bd"
+  integrity sha512-q42rySF3vMvVBasVI6N3jcgNMJ3uzORqxORAgRhces46lBv/9Bsv/R1uOEc3GOUTkoTAtXHui2JX3mGd899I7Q==
   dependencies:
     "@emotion/styled" "^10.0.27"
-    "@mdx-js/mdx" "^1.6.4"
+    "@mdx-js/mdx" "^1.6.5"
     "@theme-ui/presets" "^0.3.0"
-    gatsby-plugin-emotion "^4.3.2"
-    gatsby-plugin-mdx "^1.2.13"
-    gatsby-plugin-react-helmet "^3.3.2"
+    gatsby-plugin-emotion "^4.3.3"
+    gatsby-plugin-mdx "^1.2.14"
+    gatsby-plugin-react-helmet "^3.3.3"
     gatsby-plugin-theme-ui "^0.3.0"
-    gatsby-plugin-typescript "^2.4.3"
-    gatsby-source-filesystem "^2.3.8"
-    react-helmet "^6.0.0"
+    gatsby-plugin-typescript "^2.4.4"
+    gatsby-source-filesystem "^2.3.10"
+    react-helmet "^6.1.0"
     react-spring "^8.0.27"
     theme-ui "^0.3.1"
 
-"@mdx-js/mdx@^1.6.4", "@mdx-js/mdx@^1.6.5":
+"@mdx-js/mdx@^1.6.5":
   version "1.6.5"
   resolved "https://registry.yarnpkg.com/@mdx-js/mdx/-/mdx-1.6.5.tgz#4e00ca5d38d678c6070d73819bb696e4030e2662"
   integrity sha512-DC13eeEM0Dv9OD+UVhyB69BlV29d2eoAmfiR/XdgNl4R7YmRNEPGRD3QvGUdRUDxYdJBHauMz5ZIV507cNXXaA==
@@ -6348,7 +6348,7 @@ gatsby-page-utils@^0.2.8:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-emotion@^4.3.2:
+gatsby-plugin-emotion@^4.3.3:
   version "4.3.3"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-4.3.3.tgz#61f20d63ddca46b7349ef1405cd13dbe49640043"
   integrity sha512-bh06fzkvMPmqXNSfDo8SdxKd0ZnqRImllgf1wwx/ZzePRkvvbQT5CwtJry4LWU8RiOFlDbS8Wl1ERIAes1CANQ==
@@ -6374,7 +6374,7 @@ gatsby-plugin-manifest@^2.2.6:
     semver "^5.7.1"
     sharp "^0.25.1"
 
-gatsby-plugin-mdx@^1.2.13:
+gatsby-plugin-mdx@^1.2.14:
   version "1.2.14"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-1.2.14.tgz#570d8703cf25a0a5e0a9bbaf240e5d1a06974517"
   integrity sha512-BjWeETOubeYKoFZtjO0XT9Uudgd/Mcz9pgh5OrSYOv97jgwlob0Ea44B6/JzH5h/uw0oQxQ3aLD7pmyq0hPS+Q==
@@ -6451,7 +6451,7 @@ gatsby-plugin-page-creator@^2.3.8:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-react-helmet@^3.3.2:
+gatsby-plugin-react-helmet@^3.3.3:
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-3.3.3.tgz#85f2c2b1ee404dfc35e1f7596edba7438900fc56"
   integrity sha512-GaNBEZlOUY0kYGMjlh3Cpretn5yBkgQZi+Z2ZpJL7VdxlrgTl7B5lccGZDxteMu5QAgrM/WVkeEOvkKUE6ZxrQ==
@@ -6463,7 +6463,7 @@ gatsby-plugin-theme-ui@^0.3.0:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.3.0.tgz#ab84216536ae45abe09a6edf24156b9dbf50d6a5"
   integrity sha512-Q2tS8EeYMy7AAtt6hvDtEsd1uwrLMjkDNqabyXhAo38AFoWQ0oKtq9u1YqbiRvp1TK06pAMPQQ3to48LAqc9Cw==
 
-gatsby-plugin-typescript@^2.4.3, gatsby-plugin-typescript@^2.4.4:
+gatsby-plugin-typescript@^2.4.4:
   version "2.4.4"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-2.4.4.tgz#481ba616b608d55ccf3aa869bdfbd2731d68fc1d"
   integrity sha512-BWTqUEQ70DrqXQIEE5hl+0NK19ggDLksGZdt4OYJF3cFUmYn6sNhYu9cvKLcj4DLSxFVe1fJl7vK9n0HLdCwRA==
@@ -6553,7 +6553,7 @@ gatsby-recipes@^0.1.38:
     ws "^7.3.0"
     xstate "^4.10.0"
 
-gatsby-source-filesystem@^2.3.8:
+gatsby-source-filesystem@^2.3.10:
   version "2.3.10"
   resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.3.10.tgz#3cbf31dbf52349928db564e13b5bf182e1394708"
   integrity sha512-hX58a6eAjkmViq2Esvg9Q2JNN12UScCktvv7ci4u9dgxmQ+1GQCGtwfRm2WmI8EIiH8+ifbXSNxyFDpPr8yTgQ==
@@ -11139,7 +11139,7 @@ react-focus-lock@^2.3.1:
     use-callback-ref "^1.2.1"
     use-sidecar "^1.0.1"
 
-react-helmet@^6.0.0:
+react-helmet@^6.0.0, react-helmet@^6.1.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/react-helmet/-/react-helmet-6.1.0.tgz#a750d5165cb13cf213e44747502652e794468726"
   integrity sha512-4uMzEY9nlDlgxr61NL3XbKRy1hEkXmKNXhjbAIOVw5vcFrsdYbH2FEwcNyWvWinl103nXgzYNlns9ca+8kFiWw==
