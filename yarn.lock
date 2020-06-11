@@ -1355,10 +1355,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@lekoarts/gatsby-theme-cara@^1.2.6":
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/@lekoarts/gatsby-theme-cara/-/gatsby-theme-cara-1.2.6.tgz#65d22ca3d9ed03a55cdfeb4df7dc07455f1e21bd"
-  integrity sha512-q42rySF3vMvVBasVI6N3jcgNMJ3uzORqxORAgRhces46lBv/9Bsv/R1uOEc3GOUTkoTAtXHui2JX3mGd899I7Q==
+"@lekoarts/gatsby-theme-cara@^1.2.7":
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/@lekoarts/gatsby-theme-cara/-/gatsby-theme-cara-1.2.7.tgz#a362cc803019fb91be9fb132b792b9498ebfb112"
+  integrity sha512-/IImqcKTTbkUIBpgd+09+iTaIi5Ct9OmI2WzsH7tCc4yVEya9w4G7CDkhZz7loOOalOBplV/Z0wKostiCNzpYg==
   dependencies:
     "@emotion/styled" "^10.0.27"
     "@mdx-js/mdx" "^1.6.5"
@@ -2459,9 +2459,9 @@ acorn@^6.1.1, acorn@^6.4.1:
   integrity sha512-ZVA9k326Nwrj3Cj9jlh3wGFutC2ZornPNARZwsNYqQYgN0EsV2d53w5RN/co65Ohn4sUAUtb1rSUAOD6XN9idA==
 
 acorn@^7.1.1, acorn@^7.2.0:
-  version "7.3.0"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.3.0.tgz#34025cfa3ca25b3240d80700dc3bb695f8d86614"
-  integrity sha512-Q/reetejf1Yf8vY7wyZI8DOsrMr9r7RfnDYBVjIdE61Rk8atUkbV1Kyi/diJzgAWiDiHEPWpNoqpPb+2CUbudQ==
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.3.1.tgz#85010754db53c3fbaf3b9ea3e083aa5c5d147ffd"
+  integrity sha512-tLc0wSnatxAQHVHUapaHdz72pi9KUyHjq5KyHjGg9Y8Ifdc79pTh2XvI6I1/chZbnM7QtNKzh66ooDogPZSleA==
 
 address@1.0.3:
   version "1.0.3"
