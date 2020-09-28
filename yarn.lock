@@ -1953,9 +1953,9 @@
   integrity sha512-1HcDas8SEj4z1Wc696tH56G8OlRaH/sqZOynNNB+HF0WOeXPaxTtbYzJY2oEfiUxjSKjhCKr+MvR7dCHcEelug==
 
 "@types/reach__router@^1.3.3":
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/@types/reach__router/-/reach__router-1.3.5.tgz#14e1e981cccd3a5e50dc9e969a72de0b9d472f6d"
-  integrity sha512-h0NbqXN/tJuBY/xggZSej1SKQEstbHO7J/omt1tYoFGmj3YXOodZKbbqD4mNDh7zvEGYd7YFrac1LTtAr3xsYQ==
+  version "1.3.6"
+  resolved "https://registry.yarnpkg.com/@types/reach__router/-/reach__router-1.3.6.tgz#413417ce74caab331c70ce6a03a4c825188e4709"
+  integrity sha512-RHYataCUPQnt+GHoASyRLq6wmZ0n8jWlBW8Lxcwd30NN6vQfbmTeoSDfkgxO0S1lEzArp8OFDsq5KIs7FygjtA==
   dependencies:
     "@types/history" "*"
     "@types/react" "*"
@@ -4868,9 +4868,9 @@ ejs@^2.6.1:
   integrity sha512-7vmuyh5+kuUyJKePhQfRQBhXV5Ce+RnaeeQArKu1EAMpL3WbgMt5WG6uQZpEVvYSSsxMXRKOewtDk9RaTKXRlA==
 
 electron-to-chromium@^1.3.571:
-  version "1.3.572"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.572.tgz#62d87dfe32ca1f6b9a0f76917d24f66e94e19c01"
-  integrity sha512-TKqdEukCCl7JC20SwEoWTbtnGt4YjfHWAv4tcNky0a9qGo0WdM+Lrd60tps+nkaJCmktKBJjr99fLtEBU1ipWQ==
+  version "1.3.573"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.573.tgz#6a21e13ee894eb441677333d5fe9fa3a449689a1"
+  integrity sha512-oypaNmexr8w0m2GX67fGLQ0Xgsd7uXz7GcwaHZ9eW3ZdQ8uA2+V/wXmLdMTk3gcacbqQGAN7CXWG3fOkfKYftw==
 
 elliptic@^6.5.3:
   version "6.5.3"
@@ -5093,7 +5093,7 @@ eslint-config-react-app@^5.2.1:
   dependencies:
     confusing-browser-globals "^1.0.9"
 
-eslint-import-resolver-node@^0.3.3:
+eslint-import-resolver-node@^0.3.4:
   version "0.3.4"
   resolved "https://registry.yarnpkg.com/eslint-import-resolver-node/-/eslint-import-resolver-node-0.3.4.tgz#85ffa81942c25012d8231096ddf679c03042c717"
   integrity sha512-ogtf+5AB/O+nM6DIeBUNr2fuT7ot9Qg/1harBfBtaP13ekEWFQEEMP94BCB7zaNW3gyY+8SHYF00rnqYwXKWOA==
@@ -5136,16 +5136,16 @@ eslint-plugin-graphql@^3.1.1:
     lodash "^4.11.1"
 
 eslint-plugin-import@^2.22.0:
-  version "2.22.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.22.0.tgz#92f7736fe1fde3e2de77623c838dd992ff5ffb7e"
-  integrity sha512-66Fpf1Ln6aIS5Gr/55ts19eUuoDhAbZgnr6UxK5hbDx6l/QgQgx61AePq+BV4PP2uXQFClgMVzep5zZ94qqsxg==
+  version "2.22.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.22.1.tgz#0896c7e6a0cf44109a2d97b95903c2bb689d7702"
+  integrity sha512-8K7JjINHOpH64ozkAhpT3sd+FswIZTfMZTjdx052pnWrgRCVfp8op9tbjpAk3DdUeI/Ba4C8OjdC0r90erHEOw==
   dependencies:
     array-includes "^3.1.1"
     array.prototype.flat "^1.2.3"
     contains-path "^0.1.0"
     debug "^2.6.9"
     doctrine "1.5.0"
-    eslint-import-resolver-node "^0.3.3"
+    eslint-import-resolver-node "^0.3.4"
     eslint-module-utils "^2.6.0"
     has "^1.0.3"
     minimatch "^3.0.4"
@@ -6941,9 +6941,9 @@ hash.js@^1.0.0, hash.js@^1.0.3:
     minimalistic-assert "^1.0.1"
 
 hasha@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/hasha/-/hasha-5.2.0.tgz#33094d1f69c40a4a6ac7be53d5fe3ff95a269e0c"
-  integrity sha512-2W+jKdQbAdSIrggA8Q35Br8qKadTrqCTC8+XZvBWepKDK6m9XkX6Iz1a2yh2KP01kzAR/dpuMeUnocoLYDcskw==
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/hasha/-/hasha-5.2.1.tgz#0e5b492aa40de3819e80955f221d2fccef55b5aa"
+  integrity sha512-x15jnRSHTi3VmH+oHtVb9kgU/HuKOK8mjK8iCL3dPQXh4YJlUb9YSI8ZLiiqLAIvY2wuDIlZYZppy8vB2XISkQ==
   dependencies:
     is-stream "^2.0.0"
     type-fest "^0.8.0"
@@ -10148,9 +10148,9 @@ postcss-flexbugs-fixes@^4.2.1:
     postcss "^7.0.26"
 
 postcss-load-config@^2.0.0:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/postcss-load-config/-/postcss-load-config-2.1.1.tgz#0a684bb8beb05e55baf922f7ab44c3edb17cf78e"
-  integrity sha512-D2ENobdoZsW0+BHy4x1CAkXtbXtYWYRIxL/JbtRBqrRGOPtJ2zoga/bEZWhV/ShWB5saVxJMzbMdSyA/vv4tXw==
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/postcss-load-config/-/postcss-load-config-2.1.2.tgz#c5ea504f2c4aef33c7359a34de3573772ad7502a"
+  integrity sha512-/rDeGV6vMUo3mwJZmeHfEDvwnTKKqQ0S7OHUi/kJvvtx3aWtyWG2/0ZWnzCt2keEclwN6Tf0DST2v9kITdOKYw==
   dependencies:
     cosmiconfig "^5.0.0"
     import-cwd "^2.0.0"
@@ -10676,9 +10676,9 @@ query-string@^5.0.1:
     strict-uri-encode "^1.0.0"
 
 query-string@^6.13.1:
-  version "6.13.2"
-  resolved "https://registry.yarnpkg.com/query-string/-/query-string-6.13.2.tgz#3585aa9412c957cbd358fd5eaca7466f05586dda"
-  integrity sha512-BMmDaUiLDFU1hlM38jTFcRt7HYiGP/zt1sRzrIWm5zpeEuO1rkbPS0ELI3uehoLuuhHDCS8u8lhFN3fEN4JzPQ==
+  version "6.13.3"
+  resolved "https://registry.yarnpkg.com/query-string/-/query-string-6.13.3.tgz#57d1c20e828b0e562d66b7f71a4998bd57f84112"
+  integrity sha512-dldo2oHe3sg03iPshlHw/64nkaRUJKdS0FW85kmWQkmCkqUbNdNdgkgtAufJcEpjzrx6Q9EW9Y3xqx/rM9pGhw==
   dependencies:
     decode-uri-component "^0.2.0"
     split-on-first "^1.0.0"
