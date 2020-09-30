@@ -32,8 +32,13 @@ Also be sure to checkout other [Free & Open Source Gatsby Themes](https://themes
 ## 🚀 Getting Started
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LekoArts/gatsby-starter-portfolio-cara) [![Edit gatsby-starter-portfolio-cara](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/LekoArts/gatsby-starter-portfolio-cara/tree/master/)
+1. **Installing Gatsby CLI.**
 
-1. **Create a Gatsby site.**
+```
+npm install -g gatsby-cli
+```
+
+2. **Create a Gatsby site.**
 
 Use the Gatsby CLI to create a new site, specifying this project
 
@@ -41,7 +46,7 @@ Use the Gatsby CLI to create a new site, specifying this project
 gatsby new project-name https://github.com/LekoArts/gatsby-starter-portfolio-cara
 ```
 
-2. **Start developing.**
+3. **Start developing.**
 
 Navigate into your new site's directory and start it up.
 
@@ -50,7 +55,7 @@ cd project-name
 gatsby develop
 ```
 
-3. **Open the code and start customizing!**
+4. **Open the code and start customizing!**
 
 Your site is now running at `http://localhost:8000`!
 
