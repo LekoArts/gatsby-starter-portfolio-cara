@@ -2,7 +2,7 @@
   "private": true,
   "name": "cara",
   "description": "Playful and Colorful One-Page portfolio featuring Parallax effects and animations",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "author": "LekoArts <hello@lekoarts.de>",
   "license": "0BSD",
   "starter-name": "gatsby-starter-portfolio-cara",
@@ -18,6 +18,7 @@
   "dependencies": {
     "@lekoarts/gatsby-theme-cara": "^1.2.18",
     "gatsby": "^2.25.3",
+    "gatsby-plugin-gatsby-cloud": "^1.0.1",
     "gatsby-plugin-google-analytics": "^2.4.1",
     "gatsby-plugin-manifest": "^2.5.2",
     "gatsby-plugin-netlify": "^2.4.0",
