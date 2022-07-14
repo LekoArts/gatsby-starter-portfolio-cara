@@ -6504,7 +6504,7 @@ gatsby-parcel-config@^0.9.2:
     "@parcel/transformer-raw" "2.6.0"
     "@parcel/transformer-react-refresh-wrap" "2.6.0"
 
-gatsby-plugin-gatsby-cloud@^4.12.1:
+gatsby-plugin-gatsby-cloud@^4.18.1:
   version "4.18.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-gatsby-cloud/-/gatsby-plugin-gatsby-cloud-4.18.1.tgz#3b41576f1e2fc947216683396f76ea693d773761"
   integrity sha512-FDrLl3w3WHVJCzddTYcSCqEi4DLvS9e8/9LY312QnxOqPv+fnLoSDYDyqazyK9/mu6gMz8cUU7UoHsMqpZNbCg==
@@ -6517,7 +6517,7 @@ gatsby-plugin-gatsby-cloud@^4.12.1:
     lodash "^4.17.21"
     webpack-assets-manifest "^5.1.0"
 
-gatsby-plugin-manifest@^4.12.1:
+gatsby-plugin-manifest@^4.18.1:
   version "4.18.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-4.18.1.tgz#e99bacadbf8af8f81e5d32df2612bd0110623288"
   integrity sha512-LR4S/MCbUP7Fk3A4xwrA9nhIx9RjDTAE5DAXfXMKvnh1f6an6d+x9XKDqNnGtixVOnlfy3jK0IxLzC1HCjNKSQ==
@@ -6705,7 +6705,7 @@ gatsby-worker@^1.18.0:
     "@babel/core" "^7.15.5"
     "@babel/runtime" "^7.15.4"
 
-gatsby@^4.12.1:
+gatsby@^4.18.2:
   version "4.18.2"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-4.18.2.tgz#694613a37c6cb17db59d0efcb6f54486c2e120aa"
   integrity sha512-ZWdo0TXsSRmwlmOeeuoWwXKQNteHm9VxJWF9Ud+c33r7ZXQgTA5WtRYjiBpjZuNAUwsiONNAe+wKK5jVY8B4LQ==
