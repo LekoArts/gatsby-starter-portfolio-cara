@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-cara": "^5.1.4",
-    "gatsby": "^5.13.3",
+    "gatsby": "^5.13.6",
     "gatsby-plugin-manifest": "^5.13.1",
     "gatsby-plugin-webpack-statoscope": "^1.0.3",
     "react": "^18.2.0",
@@ -27,7 +27,10 @@
     "@types/node": "^18.19.13",
     "@types/react": "^18.2.51",
     "@types/react-dom": "^18.2.18",
+    "ajv": "^8.16.0",
+    "ajv-keywords": "^5.1.0",
     "cross-env": "^7.0.3",
+    "schema-utils": "^4.2.0",
     "typescript": "^5.3.3"
   }
 }
